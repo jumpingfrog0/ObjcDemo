@@ -1,0 +1,87 @@
+//
+//  AppDelegate.m
+//  ObjcDemo
+//
+//  Created by 黄东鸿 on 2024/1/27.
+//
+
+#import "AppDelegate.h"
+#import "ViewController.h"
+
+@interface AppDelegate ()
+
+@end
+
+@implementation AppDelegate
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 1. 创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = UIColor.whiteColor;
+    
+    // 2. 创建根视图控制器
+    ViewController *rootViewController = [[ViewController alloc] init];
+    
+    // 3. 创建导航控制器（可选，但推荐）
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    
+    // 4. 设置窗口的根视图控制器
+    self.window.rootViewController = navigationController;
+    
+    // 5. 使窗口可见
+    [self.window makeKeyAndVisible];
+    
+    // 6. 可选：设置应用外观
+    [self setupAppearance];
+    
+    return YES;
+}
+
+- (void)setupAppearance {
+    // 设置导航栏样式
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [UIColor systemBlueColor];
+        appearance.titleTextAttributes = @{
+            NSForegroundColorAttributeName: [UIColor whiteColor],
+            NSFontAttributeName: [UIFont boldSystemFontOfSize:18]
+        };
+        
+        [UINavigationBar appearance].standardAppearance = appearance;
+        [UINavigationBar appearance].scrollEdgeAppearance = appearance;
+    } else {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor systemBlueColor]];
+        [[UINavigationBar appearance] setTitleTextAttributes:@{
+            NSForegroundColorAttributeName: [UIColor whiteColor],
+            NSFontAttributeName: [UIFont boldSystemFontOfSize:18]
+        }];
+    }
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    // 应用即将进入非活动状态
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    // 应用进入后台
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    // 应用即将进入前台
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // 应用已激活
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // 应用即将终止
+}
+
+
+@end
