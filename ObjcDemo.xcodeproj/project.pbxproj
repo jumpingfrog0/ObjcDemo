@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B34FEF0B6E5393619F695A /* libPods-ObjcDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */; };
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
 		A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */; };
-		A5E84448D12CB70771D8B0B7 /* Pods_ObjcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397552283EFC07C8CEFE89A1 /* Pods_ObjcDemo.framework */; };
 		B645797D2B8FD88800F38A9A /* JFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B645797C2B8FD88800F38A9A /* JFPerson.m */; };
 		B64579802B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */; };
 		B66D3C992BB483BD009F4BEB /* BlockTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D3C982BB483BD009F4BEB /* BlockTestCase.m */; };
@@ -31,12 +31,12 @@
 
 /* Begin PBXFileReference section */
 		10C682BA7D76DF8A72AA22E8 /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		397552283EFC07C8CEFE89A1 /* Pods_ObjcDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC1CE3A5EA7D6B9F1E43FFA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A487B3A42EF406210091D5D8 /* AutoReleasePoolTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolTestCase.h; sourceTree = "<group>"; };
 		A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolTestCase.m; sourceTree = "<group>"; };
 		A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITapDebounceManager.h; sourceTree = "<group>"; };
 		A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITapDebounceManager.m; sourceTree = "<group>"; };
+		A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B645797B2B8FD88800F38A9A /* JFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPerson.h; sourceTree = "<group>"; };
 		B645797C2B8FD88800F38A9A /* JFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPerson.m; sourceTree = "<group>"; };
 		B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTest_KVC_KVO_ViewController.h; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E84448D12CB70771D8B0B7 /* Pods_ObjcDemo.framework in Frameworks */,
+				91B34FEF0B6E5393619F695A /* libPods-ObjcDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +189,7 @@
 		EFF12621B8E93118E2044DCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				397552283EFC07C8CEFE89A1 /* Pods_ObjcDemo.framework */,
+				A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +205,6 @@
 				B6C2C9492B64337400C0B8B4 /* Sources */,
 				B6C2C94A2B64337400C0B8B4 /* Frameworks */,
 				B6C2C94B2B64337400C0B8B4 /* Resources */,
-				2B55F80A2C8893DD274107C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,27 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B55F80A2C8893DD274107C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9E585CF783EAA3A139B3A524 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
