@@ -54,3 +54,6 @@ fastlane/test_output
 node_modules/
 npm-debug.log
 yarn-error.log
+
+# ccls
+.ccls-cache

@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "JFRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +22,15 @@
     self.window.backgroundColor = UIColor.whiteColor;
     
     // 2. 创建根视图控制器
-    ViewController *rootViewController = [[ViewController alloc] init];
-    
-    // 3. 创建导航控制器（可选，但推荐）
+//    ViewController *rootViewController = [[ViewController alloc] init];
+    JFRootViewController *rootViewController = [[JFRootViewController alloc] init];
+
+    // 3. 创建导航控制器
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     
     // 4. 设置窗口的根视图控制器
     self.window.rootViewController = navigationController;
-    
+
     // 5. 使窗口可见
     [self.window makeKeyAndVisible];
     
