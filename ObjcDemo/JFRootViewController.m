@@ -6,9 +6,10 @@
 //
 
 #import "JFRootViewController.h"
+#import <Masonry/Masonry.h>
 #import "JFRoomChatView.h"
 #import "JFRoomChatModel.h"
-#import <Masonry/Masonry.h>
+#import "JFReactViewController.h"
 
 @interface JFRootViewController ()
 
@@ -32,7 +33,10 @@
 
 - (void)setupTestItems
 {
-    self.testItems = @[@{@"title": @"公屏组件测试", @"identifier": @"roomChat"}];
+    self.testItems = @[
+    @{@"title": @"公屏组件测试", @"identifier": @"roomChat"},
+    @{@"title": @"rn 页面", @"identifier": @"rn"},
+    ];
 }
 
 - (void)setupTableView
@@ -86,7 +90,15 @@
 {
     if ([identifier isEqualToString:@"roomChat"]) {
         [self navigateToRoomChatTest];
+    } else if ([identifier isEqualToString:@"rn"]) {
+        [self navigateToReactNative];
     }
+}
+
+- (void)navigateToReactNative
+{
+    JFReactViewController *vc = [JFReactViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)navigateToRoomChatTest

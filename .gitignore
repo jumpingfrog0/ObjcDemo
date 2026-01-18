@@ -57,3 +57,6 @@ yarn-error.log
 
 # ccls
 .ccls-cache
+
+Build/
+build/

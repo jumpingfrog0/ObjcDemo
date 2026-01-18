@@ -19,6 +19,8 @@
 		A4E662152F0B8C25003A1278 /* JFRoomChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E662092F0B8C25003A1278 /* JFRoomChatModel.m */; };
 		B645797D2B8FD88800F38A9A /* JFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B645797C2B8FD88800F38A9A /* JFPerson.m */; };
 		B64579802B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */; };
+		B657AFFF2F1CAA1E0087A7FC /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657AFFE2F1CAA1E0087A7FC /* HelloWorld.swift */; };
+		B657B0022F1CAB2F0087A7FC /* JFReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B657B0012F1CAB2F0087A7FC /* JFReactViewController.m */; };
 		B66D3C992BB483BD009F4BEB /* BlockTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D3C982BB483BD009F4BEB /* BlockTestCase.m */; };
 		B66D3C9C2BB48490009F4BEB /* RuntimeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D3C9B2BB48490009F4BEB /* RuntimeTestCase.m */; };
 		B66D3C9F2BB48550009F4BEB /* ThreadTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D3C9E2BB48550009F4BEB /* ThreadTestCase.m */; };
@@ -62,6 +64,10 @@
 		B645797C2B8FD88800F38A9A /* JFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPerson.m; sourceTree = "<group>"; };
 		B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTest_KVC_KVO_ViewController.h; sourceTree = "<group>"; };
 		B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTest_KVC_KVO_ViewController.m; sourceTree = "<group>"; };
+		B657AFFD2F1CAA1E0087A7FC /* ObjcDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B657AFFE2F1CAA1E0087A7FC /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		B657B0002F1CAB2F0087A7FC /* JFReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFReactViewController.h; sourceTree = "<group>"; };
+		B657B0012F1CAB2F0087A7FC /* JFReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFReactViewController.m; sourceTree = "<group>"; };
 		B66D3C972BB483BD009F4BEB /* BlockTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestCase.h; sourceTree = "<group>"; };
 		B66D3C982BB483BD009F4BEB /* BlockTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestCase.m; sourceTree = "<group>"; };
 		B66D3C9A2BB48490009F4BEB /* RuntimeTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTestCase.h; sourceTree = "<group>"; };
@@ -188,6 +194,15 @@
 			path = ChatView;
 			sourceTree = "<group>";
 		};
+		B657AFFC2F1CAA060087A7FC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B657AFFE2F1CAA1E0087A7FC /* HelloWorld.swift */,
+				B657AFFD2F1CAA1E0087A7FC /* ObjcDemo-Bridging-Header.h */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		B6C2C9442B64337400C0B8B4 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,7 @@
 		B6C2C94F2B64337400C0B8B4 /* ObjcDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B657AFFC2F1CAA060087A7FC /* Swift */,
 				A487B3A92EF406B20091D5D8 /* Models */,
 				A487B3A82EF406A30091D5D8 /* ViewControllers */,
 				A487B3A72EF406400091D5D8 /* ObjcTestCase */,
@@ -219,6 +235,8 @@
 				A4E662042F0B6020003A1278 /* JFBaseViewController.m */,
 				A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */,
 				A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */,
+				B657B0002F1CAB2F0087A7FC /* JFReactViewController.h */,
+				B657B0012F1CAB2F0087A7FC /* JFReactViewController.m */,
 				B6C2C9562B64337400C0B8B4 /* ViewController.h */,
 				B6C2C9572B64337400C0B8B4 /* ViewController.m */,
 				B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */,
@@ -248,6 +266,8 @@
 				B6C2C9492B64337400C0B8B4 /* Sources */,
 				B6C2C94A2B64337400C0B8B4 /* Frameworks */,
 				B6C2C94B2B64337400C0B8B4 /* Resources */,
+				B8F8FE3F274760F32BD08C55 /* [CP] Embed Pods Frameworks */,
+				C4603D18089833F8B1DDB4F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +289,7 @@
 				TargetAttributes = {
 					B6C2C94C2B64337400C0B8B4 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 2620;
 					};
 				};
 			};
@@ -325,6 +346,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B8F8FE3F274760F32BD08C55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4603D18089833F8B1DDB4F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,7 +415,9 @@
 				A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */,
 				A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */,
 				B66D41422BC1AF6B009F4BEB /* OtherTestCase.m in Sources */,
+				B657AFFF2F1CAA1E0087A7FC /* HelloWorld.swift in Sources */,
 				B66F2A7C2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m in Sources */,
+				B657B0022F1CAB2F0087A7FC /* JFReactViewController.m in Sources */,
 				B66D3C9C2BB48490009F4BEB /* RuntimeTestCase.m in Sources */,
 				B66D3C9F2BB48550009F4BEB /* ThreadTestCase.m in Sources */,
 				B645797D2B8FD88800F38A9A /* JFPerson.m in Sources */,
@@ -379,7 +444,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -427,7 +492,12 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -437,7 +507,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -478,7 +548,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -489,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
@@ -516,6 +591,9 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcDemo/Swift/ObjcDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -526,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
@@ -553,6 +632,8 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcDemo/Swift/ObjcDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
