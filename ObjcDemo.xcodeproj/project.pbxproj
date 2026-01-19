@@ -11,6 +11,8 @@
 		A43CFB362F0B5AAC00F8D0B3 /* JFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */; };
 		A47B6F6B2F1DD014008D04F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */; };
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
+		A48E5E3B2F1E310000E3A676 /* JFTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3A2F1E310000E3A676 /* JFTestItem.m */; };
+		A48E5E402F1E31CE00E3A676 /* JFAsrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3F2F1E31CE00E3A676 /* JFAsrViewController.m */; };
 		A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */; };
 		A4E662052F0B6020003A1278 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E662042F0B6020003A1278 /* JFBaseViewController.m */; };
 		A4E662112F0B8C25003A1278 /* JFRoomChatSystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E6620B2F0B8C25003A1278 /* JFRoomChatSystemCell.m */; };
@@ -47,6 +49,10 @@
 		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
 		A487B3A42EF406210091D5D8 /* AutoReleasePoolTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolTestCase.h; sourceTree = "<group>"; };
 		A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolTestCase.m; sourceTree = "<group>"; };
+		A48E5E392F1E310000E3A676 /* JFTestItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTestItem.h; sourceTree = "<group>"; };
+		A48E5E3A2F1E310000E3A676 /* JFTestItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTestItem.m; sourceTree = "<group>"; };
+		A48E5E3E2F1E31CE00E3A676 /* JFAsrViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFAsrViewController.h; sourceTree = "<group>"; };
+		A48E5E3F2F1E31CE00E3A676 /* JFAsrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFAsrViewController.m; sourceTree = "<group>"; };
 		A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITapDebounceManager.h; sourceTree = "<group>"; };
 		A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITapDebounceManager.m; sourceTree = "<group>"; };
 		A4E662032F0B6020003A1278 /* JFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFBaseViewController.h; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 		A46F1A842DDEC602009FE6BE /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				A48E5E3D2F1E31A200E3A676 /* ASR */,
+				A48E5E3C2F1E319700E3A676 /* TapDebounceManager */,
 				A4E662102F0B8C25003A1278 /* ChatView */,
 				A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */,
 				A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */,
@@ -167,6 +175,8 @@
 		A487B3A92EF406B20091D5D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A48E5E392F1E310000E3A676 /* JFTestItem.h */,
+				A48E5E3A2F1E310000E3A676 /* JFTestItem.m */,
 				B6FCDC3C2BCAE6150012B22E /* AliveThread.h */,
 				B6FCDC3D2BCAE6150012B22E /* AliveThread.m */,
 				B645797B2B8FD88800F38A9A /* JFPerson.h */,
@@ -177,6 +187,29 @@
 				B6786B412B97979E007B07C7 /* Teacher.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A48E5E382F1E30CD00E3A676 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A48E5E3C2F1E319700E3A676 /* TapDebounceManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TapDebounceManager;
+			sourceTree = "<group>";
+		};
+		A48E5E3D2F1E31A200E3A676 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				A48E5E3E2F1E31CE00E3A676 /* JFAsrViewController.h */,
+				A48E5E3F2F1E31CE00E3A676 /* JFAsrViewController.m */,
+			);
+			path = ASR;
 			sourceTree = "<group>";
 		};
 		A4E662102F0B8C25003A1278 /* ChatView */ = {
@@ -227,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				B657AFFC2F1CAA060087A7FC /* Swift */,
+				A48E5E382F1E30CD00E3A676 /* Views */,
 				A487B3A92EF406B20091D5D8 /* Models */,
 				A487B3A82EF406A30091D5D8 /* ViewControllers */,
 				A487B3A72EF406400091D5D8 /* ObjcTestCase */,
@@ -416,7 +450,9 @@
 				A4E662052F0B6020003A1278 /* JFBaseViewController.m in Sources */,
 				B6C2C9632B64337600C0B8B4 /* main.m in Sources */,
 				B6786B3F2B979792007B07C7 /* Student.m in Sources */,
+				A48E5E402F1E31CE00E3A676 /* JFAsrViewController.m in Sources */,
 				A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */,
+				A48E5E3B2F1E310000E3A676 /* JFTestItem.m in Sources */,
 				A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */,
 				B66D41422BC1AF6B009F4BEB /* OtherTestCase.m in Sources */,
 				B657AFFF2F1CAA1E0087A7FC /* HelloWorld.swift in Sources */,

@@ -63,3 +63,6 @@ build/
 
 # react-native
 .xcode.env.local
+
+# Vibe Coding
+.trae/documents

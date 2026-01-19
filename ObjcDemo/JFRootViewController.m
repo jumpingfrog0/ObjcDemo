@@ -7,8 +7,12 @@
 
 #import "JFRootViewController.h"
 #import <Masonry/Masonry.h>
+#import "JFTestItem.h"
+
 #import "JFRoomChatView.h"
 #import "JFRoomChatModel.h"
+
+#import "JFAsrViewController.h"
 #import "JFReactViewController.h"
 
 @interface JFRootViewController ()
@@ -33,9 +37,21 @@
 
 - (void)setupTestItems
 {
+    __weak typeof(self) weakSelf = self;
+    
     self.testItems = @[
-    @{@"title": @"公屏组件测试", @"identifier": @"roomChat"},
-    @{@"title": @"rn 页面", @"identifier": @"rn"},
+        [[JFTestItem alloc] initWithTitle:@"公屏组件测试"
+                               actionBlock:^{
+            [weakSelf navigateToRoomChatTest];
+        }],
+        [[JFTestItem alloc] initWithTitle:@"rn 页面"
+                               actionBlock:^{
+            [weakSelf navigateToReactNative];
+        }],
+        [[JFTestItem alloc] initWithTitle:@"语音ASR"
+                               actionBlock:^{
+            [weakSelf navigateToASR];
+        }],
     ];
 }
 
@@ -67,8 +83,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
     
-    NSDictionary *item = self.testItems[indexPath.row];
-    cell.textLabel.text = item[@"title"];
+    JFTestItem *item = self.testItems[indexPath.row];
+    cell.textLabel.text = item.title;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -80,19 +96,19 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSDictionary *item = self.testItems[indexPath.row];
-    NSString *identifier = item[@"identifier"];
+    JFTestItem *item = self.testItems[indexPath.row];
     
-    [self handleTestItemTap:identifier];
+    if (item.actionBlock) {
+        item.actionBlock();
+    }
 }
 
-- (void)handleTestItemTap:(NSString *)identifier
+#pragma mark - Actions
+
+- (void)navigateToASR
 {
-    if ([identifier isEqualToString:@"roomChat"]) {
-        [self navigateToRoomChatTest];
-    } else if ([identifier isEqualToString:@"rn"]) {
-        [self navigateToReactNative];
-    }
+    JFAsrViewController *vc = [JFAsrViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)navigateToReactNative
