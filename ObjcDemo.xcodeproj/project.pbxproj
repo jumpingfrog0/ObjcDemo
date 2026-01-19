@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91B34FEF0B6E5393619F695A /* libPods-ObjcDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */; };
 		A43CFB362F0B5AAC00F8D0B3 /* JFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */; };
+		A47B6F6B2F1DD014008D04F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */; };
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
 		A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */; };
 		A4E662052F0B6020003A1278 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E662042F0B6020003A1278 /* JFBaseViewController.m */; };
@@ -43,6 +44,7 @@
 		5EC1CE3A5EA7D6B9F1E43FFA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRootViewController.h; sourceTree = "<group>"; };
 		A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRootViewController.m; sourceTree = "<group>"; };
+		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
 		A487B3A42EF406210091D5D8 /* AutoReleasePoolTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolTestCase.h; sourceTree = "<group>"; };
 		A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolTestCase.m; sourceTree = "<group>"; };
 		A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITapDebounceManager.h; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */,
 				B6C2C9612B64337600C0B8B4 /* Info.plist */,
 				B6C2C9622B64337600C0B8B4 /* main.m */,
+				A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */,
 			);
 			path = ObjcDemo;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47B6F6B2F1DD014008D04F4 /* PrivacyInfo.xcprivacy in Resources */,
 				B6C2C9602B64337600C0B8B4 /* LaunchScreen.storyboard in Resources */,
 				B6C2C95D2B64337600C0B8B4 /* Assets.xcassets in Resources */,
 			);
