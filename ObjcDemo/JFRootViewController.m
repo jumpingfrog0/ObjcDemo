@@ -113,8 +113,10 @@
 
 - (void)navigateToReactNative
 {
+#if REACT_NATIVE_ENABLED
     JFReactViewController *vc = [JFReactViewController new];
     [self.navigationController pushViewController:vc animated:YES];
+#endif
 }
 
 - (void)navigateToRoomChatTest

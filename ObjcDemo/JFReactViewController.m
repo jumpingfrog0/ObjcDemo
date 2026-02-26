@@ -5,6 +5,8 @@
 //  Created by 黄东鸿 on 2026/1/18.
 //
 
+#if REACT_NATIVE_ENABLED
+
 #import "JFReactViewController.h"
 #import <React/RCTBundleURLProvider.h>
 #import <RCTReactNativeFactory.h>
@@ -51,3 +53,4 @@
 }
 
 @end
+#endif
