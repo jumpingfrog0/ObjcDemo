@@ -1,0 +1,33 @@
+ObjcDemo/Features/ObjcTestCase/AutoReleasePoolTestCase.m
+  s_7605bcac5615d5::t_a8809c52217c12 9,11-12,14-23,25-29
+ObjcDemo.xcodeproj/project.pbxproj
+  s_7605bcac5615d5::t_ac81d6afc07322 139,143,145,151-154,171,174-175,181,197,200-201,203,262-265,267,269-277,281-290,293-320,325-363
+  s_7605bcac5615d5::t_e8c8fb0794fe2f 646,648,688,690
+  s_7605bcac5615d5::t_9874673d40a80a 478
+  s_7605bcac5615d5::t_bc23f8d0d1451d 16,51,74-78
+ObjcDemo/Features/Home/JFRootViewController.m
+  s_7605bcac5615d5::t_a8809c52217c12 17,45-49,121-126
+ObjcDemo/Features/ObjcTestCase/JFObjCTestListViewController.h
+  s_7605bcac5615d5::t_a8809c52217c12 1-16
+ObjcDemo/Features/ObjcTestCase/JFObjCTestListViewController.m
+  s_7605bcac5615d5::t_a8809c52217c12 1-114
+ObjcDemo/Features/ObjcTestCase/AutoReleasePoolTestCase.h
+  s_7605bcac5615d5::t_a8809c52217c12 14-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "9508cd20154514d7b0211f205f2eeb8de10c860a",
+  "prompts": {},
+  "logical_commit_id": "9508cd20154514d7b0211f205f2eeb8de10c860a",
+  "sessions": {
+    "s_7605bcac5615d5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3afb-b4cb-7643-85a4-dd05980d4988",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
