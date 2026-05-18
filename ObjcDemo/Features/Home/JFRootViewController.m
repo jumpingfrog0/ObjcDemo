@@ -15,6 +15,7 @@
 #import "JFAsrViewController.h"
 #import "JFReactViewController.h"
 #import "JFObjCTestListViewController.h"
+#import "FamVapTestController.h"
 
 @interface JFRootViewController ()
 
@@ -62,6 +63,11 @@
     [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"语音ASR"
                                                     actionBlock:^{
                                  [weakSelf navigateToASR];
+                             }]];
+
+    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"VAP 测试"
+                                                    actionBlock:^{
+                                 [weakSelf navigateToVAP];
                              }]];
 }
 
@@ -118,6 +124,12 @@
 - (void)navigateToASR
 {
     JFAsrViewController *vc = [JFAsrViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)navigateToVAP
+{
+    FamVapTestController *vc = [FamVapTestController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

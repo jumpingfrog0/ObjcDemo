@@ -94,7 +94,7 @@
     }
     
     if (result) {
-        FMLOG(@"iOSInjection 加载成功");
+        NSLog(@"iOSInjection 加载成功");
     }
 #endif
     

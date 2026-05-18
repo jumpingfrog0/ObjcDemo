@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AB3C102AA8F123215EA0D36 /* JFVapResourceDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F176EDD05B562F19ADCBFB76 /* JFVapResourceDownloader.m */; };
+		717D2FD41CF7433F277B33D3 /* JFVapDebugConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FFA3FB562E917E2CB321E /* JFVapDebugConfig.m */; };
 		91B34FEF0B6E5393619F695A /* libPods-ObjcDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */; };
+		95731E04464A316849A5C59E /* FamVapTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2780780366C0C47018900786 /* FamVapTestController.m */; };
+		A4059A852FBB56EA007D6B54 /* QGHWDShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A4059A842FBB56EA007D6B54 /* QGHWDShaders.metal */; };
 		A43CFB362F0B5AAC00F8D0B3 /* JFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */; };
 		A47B6F6B2F1DD014008D04F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */; };
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
 		A48E5E3B2F1E310000E3A676 /* JFTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3A2F1E310000E3A676 /* JFTestItem.m */; };
 		A48E5E402F1E31CE00E3A676 /* JFAsrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3F2F1E31CE00E3A676 /* JFAsrViewController.m */; };
-		C0DEA0030000000000000001 /* JFObjCTestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEA0020000000000000001 /* JFObjCTestListViewController.m */; };
 		A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */; };
 		A4E662052F0B6020003A1278 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E662042F0B6020003A1278 /* JFBaseViewController.m */; };
 		A4E662112F0B8C25003A1278 /* JFRoomChatSystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E6620B2F0B8C25003A1278 /* JFRoomChatSystemCell.m */; };
@@ -40,12 +43,20 @@
 		B6C2C9632B64337600C0B8B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2C9622B64337600C0B8B4 /* main.m */; };
 		B6F6719B2BCA87AB00458D46 /* JFThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */; };
 		B6FCDC3E2BCAE6150012B22E /* AliveThread.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCDC3D2BCAE6150012B22E /* AliveThread.m */; };
+		C0DEA0030000000000000001 /* JFObjCTestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEA0020000000000000001 /* JFObjCTestListViewController.m */; };
+		F6512E56E3B0B17A3D831B41 /* JFVapImageCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A095A6A8FAA03E4D981989D4 /* JFVapImageCacheHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10C682BA7D76DF8A72AA22E8 /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2091B7531CD4AD9D78983C63 /* JFVapImageCacheHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFVapImageCacheHelper.h; sourceTree = "<group>"; };
+		2780780366C0C47018900786 /* FamVapTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FamVapTestController.m; sourceTree = "<group>"; };
+		573CCE0069D5C0730588E033 /* FamVapTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FamVapTestController.h; sourceTree = "<group>"; };
 		5EC1CE3A5EA7D6B9F1E43FFA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
+		62167E8A1F86476072ED0115 /* JFVapResourceDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFVapResourceDownloader.h; sourceTree = "<group>"; };
+		A095A6A8FAA03E4D981989D4 /* JFVapImageCacheHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFVapImageCacheHelper.m; sourceTree = "<group>"; };
 		A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A4059A842FBB56EA007D6B54 /* QGHWDShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = QGHWDShaders.metal; path = Pods/QGVAPlayer/Classes/Shaders/QGHWDShaders.metal; sourceTree = SOURCE_ROOT; };
 		A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRootViewController.h; sourceTree = "<group>"; };
 		A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRootViewController.m; sourceTree = "<group>"; };
 		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -70,12 +81,8 @@
 		A4E6620E2F0B8C25003A1278 /* JFRoomChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRoomChatView.h; sourceTree = "<group>"; };
 		A4E6620F2F0B8C25003A1278 /* JFRoomChatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRoomChatView.m; sourceTree = "<group>"; };
 		A4EF0EB72F4FF3F600949EAE /* JFMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFMacro.h; sourceTree = "<group>"; };
+		A56AD08700904092D9B820E6 /* JFVapDebugConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFVapDebugConfig.h; sourceTree = "<group>"; };
 		A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0DEA0010000000000000001 /* JFObjCTestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFObjCTestListViewController.h; sourceTree = "<group>"; };
-		C0DEA0020000000000000001 /* JFObjCTestListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFObjCTestListViewController.m; sourceTree = "<group>"; };
-		C0DEA0040000000000000001 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C0DEA0050000000000000001 /* main2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
-		C0DEA0060000000000000001 /* main-arm64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
 		B645797B2B8FD88800F38A9A /* JFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPerson.h; sourceTree = "<group>"; };
 		B645797C2B8FD88800F38A9A /* JFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPerson.m; sourceTree = "<group>"; };
 		B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTest_KVC_KVO_ViewController.h; sourceTree = "<group>"; };
@@ -113,6 +120,13 @@
 		B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFThreadTestViewController.m; sourceTree = "<group>"; };
 		B6FCDC3C2BCAE6150012B22E /* AliveThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliveThread.h; sourceTree = "<group>"; };
 		B6FCDC3D2BCAE6150012B22E /* AliveThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliveThread.m; sourceTree = "<group>"; };
+		C0DEA0010000000000000001 /* JFObjCTestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFObjCTestListViewController.h; sourceTree = "<group>"; };
+		C0DEA0020000000000000001 /* JFObjCTestListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFObjCTestListViewController.m; sourceTree = "<group>"; };
+		C0DEA0040000000000000001 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C0DEA0050000000000000001 /* main2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
+		C0DEA0060000000000000001 /* main-arm64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
+		D12FFA3FB562E917E2CB321E /* JFVapDebugConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFVapDebugConfig.m; sourceTree = "<group>"; };
+		F176EDD05B562F19ADCBFB76 /* JFVapResourceDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFVapResourceDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2037B32421122D8B00D921BE /* VAP */ = {
+			isa = PBXGroup;
+			children = (
+				573CCE0069D5C0730588E033 /* FamVapTestController.h */,
+				2780780366C0C47018900786 /* FamVapTestController.m */,
+				A56AD08700904092D9B820E6 /* JFVapDebugConfig.h */,
+				D12FFA3FB562E917E2CB321E /* JFVapDebugConfig.m */,
+				2091B7531CD4AD9D78983C63 /* JFVapImageCacheHelper.h */,
+				A095A6A8FAA03E4D981989D4 /* JFVapImageCacheHelper.m */,
+				62167E8A1F86476072ED0115 /* JFVapResourceDownloader.h */,
+				F176EDD05B562F19ADCBFB76 /* JFVapResourceDownloader.m */,
+			);
+			path = VAP;
+			sourceTree = "<group>";
+		};
 		4077A455EC2ECA3441019C40 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +331,7 @@
 				A487B3A82EF406A30091D5D8 /* Threads */,
 				C0DEA0130000000000000001 /* KVCKVO */,
 				A48E5E3D2F1E31A200E3A676 /* ASR */,
+				2037B32421122D8B00D921BE /* VAP */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -318,6 +348,7 @@
 		C0DEA0140000000000000001 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4059A842FBB56EA007D6B54 /* QGHWDShaders.metal */,
 				B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */,
 				B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */,
 				A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */,
@@ -382,6 +413,7 @@
 				B6C2C9492B64337400C0B8B4 /* Sources */,
 				B6C2C94A2B64337400C0B8B4 /* Frameworks */,
 				B6C2C94B2B64337400C0B8B4 /* Resources */,
+				6B64F093899BAB9ED8D04000 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,6 +471,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6B64F093899BAB9ED8D04000 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E585CF783EAA3A139B3A524 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +537,7 @@
 				B6786B3F2B979792007B07C7 /* Student.m in Sources */,
 				A48E5E402F1E31CE00E3A676 /* JFAsrViewController.m in Sources */,
 				A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */,
+				A4059A852FBB56EA007D6B54 /* QGHWDShaders.metal in Sources */,
 				A48E5E3B2F1E310000E3A676 /* JFTestItem.m in Sources */,
 				A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */,
 				B66D41422BC1AF6B009F4BEB /* OtherTestCase.m in Sources */,
@@ -497,6 +547,10 @@
 				B66D3C9C2BB48490009F4BEB /* RuntimeTestCase.m in Sources */,
 				B66D3C9F2BB48550009F4BEB /* ThreadTestCase.m in Sources */,
 				B645797D2B8FD88800F38A9A /* JFPerson.m in Sources */,
+				95731E04464A316849A5C59E /* FamVapTestController.m in Sources */,
+				717D2FD41CF7433F277B33D3 /* JFVapDebugConfig.m in Sources */,
+				F6512E56E3B0B17A3D831B41 /* JFVapImageCacheHelper.m in Sources */,
+				4AB3C102AA8F123215EA0D36 /* JFVapResourceDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

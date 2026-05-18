@@ -60,6 +60,7 @@ yarn-error.log
 
 Build/
 build/
+.build/
 
 # react-native
 .xcode.env.local
