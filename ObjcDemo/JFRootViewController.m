@@ -39,20 +39,24 @@
 {
     __weak typeof(self) weakSelf = self;
     
-    self.testItems = @[
-        [[JFTestItem alloc] initWithTitle:@"公屏组件测试"
-                               actionBlock:^{
-            [weakSelf navigateToRoomChatTest];
-        }],
-        [[JFTestItem alloc] initWithTitle:@"rn 页面"
-                               actionBlock:^{
-            [weakSelf navigateToReactNative];
-        }],
-        [[JFTestItem alloc] initWithTitle:@"语音ASR"
-                               actionBlock:^{
-            [weakSelf navigateToASR];
-        }],
-    ];
+    
+    self.testItems = [NSMutableArray array];
+    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"公屏组件测试"
+                                                       actionBlock:^{
+                                    [weakSelf navigateToRoomChatTest];
+    }]];
+    
+#if REACT_NATIVE_ENABLED
+    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"rn 页面"
+                                                    actionBlock:^{
+                                 [weakSelf navigateToReactNative];
+                             }]];
+#endif
+    
+    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"语音ASR"
+                                                    actionBlock:^{
+                                 [weakSelf navigateToASR];
+                             }]];
 }
 
 - (void)setupTableView

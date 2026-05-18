@@ -1,0 +1,8 @@
+//
+//  ObjcDemo-Prefix.pch
+//  ObjcDemo
+//
+
+#ifdef __OBJC__
+#import "JFMacro.h"
+#endif

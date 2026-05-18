@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JFRootViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *testListTableView;
-@property (nonatomic, strong) NSArray<JFTestItem *> *testItems;
+@property (nonatomic, strong) NSMutableArray<JFTestItem *> *testItems;
 
 @end
 

@@ -44,6 +44,7 @@
 /* Begin PBXFileReference section */
 		10C682BA7D76DF8A72AA22E8 /* Pods-ObjcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.debug.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC1CE3A5EA7D6B9F1E43FFA /* Pods-ObjcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRootViewController.h; sourceTree = "<group>"; };
 		A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRootViewController.m; sourceTree = "<group>"; };
 		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
@@ -269,6 +270,7 @@
 				B6C2C9502B64337400C0B8B4 /* AppDelegate.h */,
 				B6C2C9512B64337400C0B8B4 /* AppDelegate.m */,
 				A4EF0EB72F4FF3F600949EAE /* JFMacro.h */,
+				A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */,
 				A4E662032F0B6020003A1278 /* JFBaseViewController.h */,
 				A4E662042F0B6020003A1278 /* JFBaseViewController.m */,
 				A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */,
@@ -565,6 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
+				GCC_PREFIX_HEADER = "ObjcDemo/ObjcDemo-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjcDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ObjcDemo;
@@ -606,6 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
+				GCC_PREFIX_HEADER = "ObjcDemo/ObjcDemo-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjcDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ObjcDemo;
