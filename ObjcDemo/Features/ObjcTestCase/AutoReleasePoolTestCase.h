@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AutoReleasePoolTestCase : NSObject
 
+- (void)runTest;
+
 @end
 
 NS_ASSUME_NONNULL_END

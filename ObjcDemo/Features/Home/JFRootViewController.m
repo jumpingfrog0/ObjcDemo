@@ -14,6 +14,7 @@
 
 #import "JFAsrViewController.h"
 #import "JFReactViewController.h"
+#import "JFObjCTestListViewController.h"
 
 @interface JFRootViewController ()
 
@@ -41,6 +42,11 @@
     
     
     self.testItems = [NSMutableArray array];
+    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"Objective-C 基础测试"
+                                                    actionBlock:^{
+                                 [weakSelf navigateToObjcTestCases];
+                             }]];
+
     [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"公屏组件测试"
                                                        actionBlock:^{
                                     [weakSelf navigateToRoomChatTest];
@@ -112,6 +118,12 @@
 - (void)navigateToASR
 {
     JFAsrViewController *vc = [JFAsrViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)navigateToObjcTestCases
+{
+    JFObjCTestListViewController *vc = [JFObjCTestListViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

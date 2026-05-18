@@ -13,6 +13,7 @@
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
 		A48E5E3B2F1E310000E3A676 /* JFTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3A2F1E310000E3A676 /* JFTestItem.m */; };
 		A48E5E402F1E31CE00E3A676 /* JFAsrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48E5E3F2F1E31CE00E3A676 /* JFAsrViewController.m */; };
+		C0DEA0030000000000000001 /* JFObjCTestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEA0020000000000000001 /* JFObjCTestListViewController.m */; };
 		A4D87DD42DFFB170009ED61B /* UITapDebounceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */; };
 		A4E662052F0B6020003A1278 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E662042F0B6020003A1278 /* JFBaseViewController.m */; };
 		A4E662112F0B8C25003A1278 /* JFRoomChatSystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E6620B2F0B8C25003A1278 /* JFRoomChatSystemCell.m */; };
@@ -47,7 +48,7 @@
 		A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRootViewController.h; sourceTree = "<group>"; };
 		A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRootViewController.m; sourceTree = "<group>"; };
-		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
+		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A487B3A42EF406210091D5D8 /* AutoReleasePoolTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolTestCase.h; sourceTree = "<group>"; };
 		A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolTestCase.m; sourceTree = "<group>"; };
 		A48E5E392F1E310000E3A676 /* JFTestItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTestItem.h; sourceTree = "<group>"; };
@@ -70,6 +71,11 @@
 		A4E6620F2F0B8C25003A1278 /* JFRoomChatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRoomChatView.m; sourceTree = "<group>"; };
 		A4EF0EB72F4FF3F600949EAE /* JFMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFMacro.h; sourceTree = "<group>"; };
 		A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DEA0010000000000000001 /* JFObjCTestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFObjCTestListViewController.h; sourceTree = "<group>"; };
+		C0DEA0020000000000000001 /* JFObjCTestListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFObjCTestListViewController.m; sourceTree = "<group>"; };
+		C0DEA0040000000000000001 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C0DEA0050000000000000001 /* main2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
+		C0DEA0060000000000000001 /* main-arm64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
 		B645797B2B8FD88800F38A9A /* JFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPerson.h; sourceTree = "<group>"; };
 		B645797C2B8FD88800F38A9A /* JFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPerson.m; sourceTree = "<group>"; };
 		B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTest_KVC_KVO_ViewController.h; sourceTree = "<group>"; };
@@ -130,21 +136,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A46F1A842DDEC602009FE6BE /* UIComponents */ = {
+		A46F1A842DDEC602009FE6BE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A48E5E3D2F1E31A200E3A676 /* ASR */,
-				A48E5E3C2F1E319700E3A676 /* TapDebounceManager */,
 				A4E662102F0B8C25003A1278 /* ChatView */,
-				A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */,
-				A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */,
+				A48E5E3C2F1E319700E3A676 /* TapDebounce */,
 			);
-			path = UIComponents;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A487B3A72EF406400091D5D8 /* ObjcTestCase */ = {
 			isa = PBXGroup;
 			children = (
+				C0DEA0010000000000000001 /* JFObjCTestListViewController.h */,
+				C0DEA0020000000000000001 /* JFObjCTestListViewController.m */,
+				B6C2C9562B64337400C0B8B4 /* ViewController.h */,
+				B6C2C9572B64337400C0B8B4 /* ViewController.m */,
 				B66D3C9D2BB48550009F4BEB /* ThreadTestCase.h */,
 				B66D3C9E2BB48550009F4BEB /* ThreadTestCase.m */,
 				B66D3C9A2BB48490009F4BEB /* RuntimeTestCase.h */,
@@ -161,26 +168,22 @@
 			path = ObjcTestCase;
 			sourceTree = "<group>";
 		};
-		A487B3A82EF406A30091D5D8 /* ViewControllers */ = {
+		A487B3A82EF406A30091D5D8 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */,
-				B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */,
+				B6FCDC3C2BCAE6150012B22E /* AliveThread.h */,
+				B6FCDC3D2BCAE6150012B22E /* AliveThread.m */,
 				B6F671992BCA87AB00458D46 /* JFThreadTestViewController.h */,
 				B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */,
 				B66F2A7A2BCC16CD0003CC99 /* JFAliveThreadTestViewController.h */,
 				B66F2A7B2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m */,
 			);
-			path = ViewControllers;
+			path = Threads;
 			sourceTree = "<group>";
 		};
 		A487B3A92EF406B20091D5D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A48E5E392F1E310000E3A676 /* JFTestItem.h */,
-				A48E5E3A2F1E310000E3A676 /* JFTestItem.m */,
-				B6FCDC3C2BCAE6150012B22E /* AliveThread.h */,
-				B6FCDC3D2BCAE6150012B22E /* AliveThread.m */,
 				B645797B2B8FD88800F38A9A /* JFPerson.h */,
 				B645797C2B8FD88800F38A9A /* JFPerson.m */,
 				B6786B3D2B979792007B07C7 /* Student.h */,
@@ -191,18 +194,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A48E5E382F1E30CD00E3A676 /* Views */ = {
+		A48E5E3C2F1E319700E3A676 /* TapDebounce */ = {
 			isa = PBXGroup;
 			children = (
+				A4D87DD22DFFB170009ED61B /* UITapDebounceManager.h */,
+				A4D87DD32DFFB170009ED61B /* UITapDebounceManager.m */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A48E5E3C2F1E319700E3A676 /* TapDebounceManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TapDebounceManager;
+			path = TapDebounce;
 			sourceTree = "<group>";
 		};
 		A48E5E3D2F1E31A200E3A676 /* ASR */ = {
@@ -261,31 +259,108 @@
 		B6C2C94F2B64337400C0B8B4 /* ObjcDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C0DEA0100000000000000001 /* App */,
+				C0DEA0110000000000000001 /* Common */,
+				C0DEA0120000000000000001 /* Features */,
+				A46F1A842DDEC602009FE6BE /* Components */,
 				B657AFFC2F1CAA060087A7FC /* Swift */,
-				A48E5E382F1E30CD00E3A676 /* Views */,
+				C0DEA0150000000000000001 /* ReactNative */,
 				A487B3A92EF406B20091D5D8 /* Models */,
-				A487B3A82EF406A30091D5D8 /* ViewControllers */,
-				A487B3A72EF406400091D5D8 /* ObjcTestCase */,
-				A46F1A842DDEC602009FE6BE /* UIComponents */,
-				B6C2C9502B64337400C0B8B4 /* AppDelegate.h */,
-				B6C2C9512B64337400C0B8B4 /* AppDelegate.m */,
-				A4EF0EB72F4FF3F600949EAE /* JFMacro.h */,
-				A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */,
-				A4E662032F0B6020003A1278 /* JFBaseViewController.h */,
-				A4E662042F0B6020003A1278 /* JFBaseViewController.m */,
-				A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */,
-				A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */,
-				B657B0002F1CAB2F0087A7FC /* JFReactViewController.h */,
-				B657B0012F1CAB2F0087A7FC /* JFReactViewController.m */,
-				B6C2C9562B64337400C0B8B4 /* ViewController.h */,
-				B6C2C9572B64337400C0B8B4 /* ViewController.m */,
-				B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */,
-				B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */,
-				B6C2C9612B64337600C0B8B4 /* Info.plist */,
-				B6C2C9622B64337600C0B8B4 /* main.m */,
-				A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */,
+				C0DEA0140000000000000001 /* Resources */,
+				C0DEA0160000000000000001 /* Experiments */,
 			);
 			path = ObjcDemo;
+			sourceTree = "<group>";
+		};
+		C0DEA0100000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2C9502B64337400C0B8B4 /* AppDelegate.h */,
+				B6C2C9512B64337400C0B8B4 /* AppDelegate.m */,
+				A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */,
+				B6C2C9612B64337600C0B8B4 /* Info.plist */,
+				B6C2C9622B64337600C0B8B4 /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C0DEA0110000000000000001 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF0EB72F4FF3F600949EAE /* JFMacro.h */,
+				A4E662032F0B6020003A1278 /* JFBaseViewController.h */,
+				A4E662042F0B6020003A1278 /* JFBaseViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C0DEA0120000000000000001 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C0DEA0180000000000000001 /* Home */,
+				A487B3A72EF406400091D5D8 /* ObjcTestCase */,
+				A487B3A82EF406A30091D5D8 /* Threads */,
+				C0DEA0130000000000000001 /* KVCKVO */,
+				A48E5E3D2F1E31A200E3A676 /* ASR */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C0DEA0130000000000000001 /* KVCKVO */ = {
+			isa = PBXGroup;
+			children = (
+				B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */,
+				B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */,
+			);
+			path = KVCKVO;
+			sourceTree = "<group>";
+		};
+		C0DEA0140000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */,
+				B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */,
+				A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0DEA0150000000000000001 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				B657B0002F1CAB2F0087A7FC /* JFReactViewController.h */,
+				B657B0012F1CAB2F0087A7FC /* JFReactViewController.m */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
+		C0DEA0160000000000000001 /* Experiments */ = {
+			isa = PBXGroup;
+			children = (
+				C0DEA0170000000000000001 /* Generated */,
+			);
+			path = Experiments;
+			sourceTree = "<group>";
+		};
+		C0DEA0170000000000000001 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C0DEA0060000000000000001 /* main-arm64.cpp */,
+				C0DEA0040000000000000001 /* main.cpp */,
+				C0DEA0050000000000000001 /* main2.cpp */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		C0DEA0180000000000000001 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */,
+				A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */,
+				A48E5E392F1E310000E3A676 /* JFTestItem.h */,
+				A48E5E3A2F1E310000E3A676 /* JFTestItem.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		EFF12621B8E93118E2044DCF /* Frameworks */ = {
@@ -400,6 +475,7 @@
 				A4E662112F0B8C25003A1278 /* JFRoomChatSystemCell.m in Sources */,
 				A4E662122F0B8C25003A1278 /* JFRoomChatView.m in Sources */,
 				A4E662132F0B8C25003A1278 /* JFRoomChatTextCell.m in Sources */,
+				C0DEA0030000000000000001 /* JFObjCTestListViewController.m in Sources */,
 				A4E662142F0B8C25003A1278 /* JFRoomChatBaseCell.m in Sources */,
 				A4E662152F0B8C25003A1278 /* JFRoomChatModel.m in Sources */,
 				B6786B422B97979E007B07C7 /* Teacher.m in Sources */,
@@ -567,9 +643,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
-				GCC_PREFIX_HEADER = "ObjcDemo/ObjcDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjcDemo/App/ObjcDemo-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ObjcDemo/Info.plist;
+				INFOPLIST_FILE = ObjcDemo/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ObjcDemo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow the use of your phone camera when editing your profile or upload moment images";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow the use of your mic for one by one calling, and send voice message.";
@@ -609,9 +685,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4BZ43Z9R2;
-				GCC_PREFIX_HEADER = "ObjcDemo/ObjcDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjcDemo/App/ObjcDemo-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ObjcDemo/Info.plist;
+				INFOPLIST_FILE = ObjcDemo/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ObjcDemo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow the use of your phone camera when editing your profile or upload moment images";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow the use of your mic for one by one calling, and send voice message.";
