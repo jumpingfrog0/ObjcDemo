@@ -435,11 +435,12 @@ void QG_VAP_Logger_handler(VAPLogLevel level, const char *file, int line, const 
 
 - (void)playVap:(NSString *)resPath contentMode:(QGVAPWrapViewContentMode)contentMode blendMode:(QGHWDTextureBlendMode)blendMode
 {
-    FamVapWrapView *wrapView = [[FamVapWrapView alloc] initWithFrame:self.view.bounds];
+    UIView *containerView = self.effectContainerView;
+    FamVapWrapView *wrapView = [[FamVapWrapView alloc] initWithFrame:containerView.bounds];
+    wrapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     wrapView.contentMode = contentMode;
     wrapView.autoDestoryAfterFinish = YES;
     wrapView.hwd_enterBackgroundOP = [self currentEnterBackgroundOperationType];
-    UIView *containerView = self.effectContainerView;
     self.currentEffectContainerView = containerView;
     [containerView addSubview:wrapView];
     [wrapView setMute:NO];
