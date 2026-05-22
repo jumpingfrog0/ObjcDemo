@@ -33,8 +33,7 @@ def ios_thirdparty()
   
   pod 'Masonry', '1.1.0'
   pod 'SDWebImage', '5.21.7'
-#  pod 'QGVAPlayer', :git => 'https://git.duowan.com/voicetech/ios/vap-ios.git'
-  pod 'QGVAPlayer', :git => 'https://github.com/jumpingfrog0/vap.git'
+  pod 'QGVAPlayer', :git => 'https://github.com/jumpingfrog0/vap-ios.git'
 
 end
 

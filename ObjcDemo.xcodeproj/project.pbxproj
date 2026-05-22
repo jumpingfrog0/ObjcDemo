@@ -11,7 +11,6 @@
 		717D2FD41CF7433F277B33D3 /* JFVapDebugConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FFA3FB562E917E2CB321E /* JFVapDebugConfig.m */; };
 		91B34FEF0B6E5393619F695A /* libPods-ObjcDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80F341A71F3B05243158FB5 /* libPods-ObjcDemo.a */; };
 		95731E04464A316849A5C59E /* FamVapTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2780780366C0C47018900786 /* FamVapTestController.m */; };
-		A40A511A2FBC45CD0068FFB7 /* QGHWDShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A40A51192FBC45CD0068FFB7 /* QGHWDShaders.metal */; };
 		A43CFB362F0B5AAC00F8D0B3 /* JFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */; };
 		A47B6F6B2F1DD014008D04F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */; };
 		A487B3A62EF406210091D5D8 /* AutoReleasePoolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A487B3A52EF406210091D5D8 /* AutoReleasePoolTestCase.m */; };
@@ -56,7 +55,6 @@
 		62167E8A1F86476072ED0115 /* JFVapResourceDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFVapResourceDownloader.h; sourceTree = "<group>"; };
 		A095A6A8FAA03E4D981989D4 /* JFVapImageCacheHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFVapImageCacheHelper.m; sourceTree = "<group>"; };
 		A4059A812FBB3110007D6B54 /* ObjcDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcDemo-Prefix.pch"; sourceTree = "<group>"; };
-		A40A51192FBC45CD0068FFB7 /* QGHWDShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = QGHWDShaders.metal; path = Pods/QGVAPlayer/iOS/QGVAPlayer/QGVAPlayer/Classes/Shaders/QGHWDShaders.metal; sourceTree = SOURCE_ROOT; };
 		A43CFB342F0B5AAC00F8D0B3 /* JFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRootViewController.h; sourceTree = "<group>"; };
 		A43CFB352F0B5AAC00F8D0B3 /* JFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRootViewController.m; sourceTree = "<group>"; };
 		A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 		C0DEA0140000000000000001 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A40A51192FBC45CD0068FFB7 /* QGHWDShaders.metal */,
 				B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */,
 				B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */,
 				A47B6F6A2F1DD014008D04F4 /* PrivacyInfo.xcprivacy */,
@@ -479,13 +476,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjcDemo/Pods-ObjcDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,7 +514,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40A511A2FBC45CD0068FFB7 /* QGHWDShaders.metal in Sources */,
 				B6FCDC3E2BCAE6150012B22E /* AliveThread.m in Sources */,
 				B6F6719B2BCA87AB00458D46 /* JFThreadTestViewController.m in Sources */,
 				A43CFB362F0B5AAC00F8D0B3 /* JFRootViewController.m in Sources */,
