@@ -29,11 +29,20 @@ def debug_tools()
   
 end
 
+def jf_libs()
+  
+  pod 'QGVAPlayer', :git => 'https://github.com/jumpingfrog0/vap-ios.git'
+  
+  pod 'JFFoundation', :path => './Libs/JFFoundation'
+  
+  pod 'JFUIKit', :path => './Libs/JFUIKit'
+  
+end
+
 def ios_thirdparty()
   
   pod 'Masonry', '1.1.0'
   pod 'SDWebImage', '5.21.7'
-  pod 'QGVAPlayer', :git => 'https://github.com/jumpingfrog0/vap-ios.git'
 
 end
 
@@ -45,6 +54,7 @@ target 'ObjcDemo' do
   
   ios_thirdparty()
   
+  jf_libs()
   
   if $ReactNativeEnabled
     config = use_native_modules!
