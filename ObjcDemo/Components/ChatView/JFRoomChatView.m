@@ -2,7 +2,7 @@
 //  JFRoomChatView.m
 //  ObjcDemo
 //
-//  Created by AI Assistant on 2026/01/05.
+//  Created by huangdonghong on 2026/01/05.
 //
 
 #import "JFRoomChatView.h"
@@ -70,7 +70,8 @@
 - (void)setupConstraints {
     // 消息列表表格视图约束
     [self.messageTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
+        make.top.bottom.equalTo(self);
+        make.leading.trailing.equalTo(self);
     }];
 }
 

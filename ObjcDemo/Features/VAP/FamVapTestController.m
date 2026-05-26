@@ -2,7 +2,7 @@
 //  FamVapTestController.m
 //  ObjcDemo
 //
-//  Created by Codex on 2026/5/18.
+//  Created by huangdonghong on 2026/5/18.
 //
 
 #import "FamVapTestController.h"
@@ -386,22 +386,30 @@ void QG_VAP_Logger_handler(VAPLogLevel level, const char *file, int line, const 
 
 - (void)playNotVap:(NSString *)resPath
 {
-    VAPView *mp4View = [[VAPView alloc] initWithFrame:self.view.bounds];
-    mp4View.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+    VAPView *mp4View = [[VAPView alloc] initWithFrame:CGRectZero];
     mp4View.userInteractionEnabled = YES;
     mp4View.hwd_enterBackgroundOP = [self currentEnterBackgroundOperationType];
     [self.view addSubview:mp4View];
+    [mp4View mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.view);
+        make.leading.trailing.equalTo(self.view);
+    }];
+    [self.view layoutIfNeeded];
     [mp4View enableOldVersion:YES];
     [mp4View playHWDMP4:resPath repeatCount:0 delegate:self];
 }
 
 - (void)playVapx:(NSString *)resPath
 {
-    VAPView *mp4View = [[VAPView alloc] initWithFrame:self.view.bounds];
-    mp4View.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+    VAPView *mp4View = [[VAPView alloc] initWithFrame:CGRectZero];
     mp4View.userInteractionEnabled = YES;
     mp4View.hwd_enterBackgroundOP = [self currentEnterBackgroundOperationType];
     [self.view addSubview:mp4View];
+    [mp4View mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.view);
+        make.leading.trailing.equalTo(self.view);
+    }];
+    [self.view layoutIfNeeded];
     [mp4View setMute:NO];
     [mp4View playHWDMP4:resPath repeatCount:0 delegate:self];
 }
@@ -410,12 +418,16 @@ void QG_VAP_Logger_handler(VAPLogLevel level, const char *file, int line, const 
 {
     [self download:@"https://o-sg.famoapp.com/appres/afb41aa6-0593-4ff9-9e41-7d70a8f79356.mp4" callback:^(NSString *filePath) {
         __block BOOL pause = NO;
-        QGVAPWrapView *wrapView = [[QGVAPWrapView alloc] initWithFrame:self.view.bounds];
-        wrapView.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+        QGVAPWrapView *wrapView = [[QGVAPWrapView alloc] initWithFrame:CGRectZero];
         wrapView.contentMode = QGVAPWrapViewContentModeAspectFit;
         wrapView.autoDestoryAfterFinish = YES;
         wrapView.hwd_enterBackgroundOP = [self currentEnterBackgroundOperationType];
         [self.view addSubview:wrapView];
+        [wrapView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.bottom.equalTo(self.view);
+            make.leading.trailing.equalTo(self.view);
+        }];
+        [self.view layoutIfNeeded];
         [wrapView setMute:NO];
         [wrapView playHWDMP4:filePath repeatCount:0 delegate:self];
 
@@ -436,13 +448,17 @@ void QG_VAP_Logger_handler(VAPLogLevel level, const char *file, int line, const 
 - (void)playVap:(NSString *)resPath contentMode:(QGVAPWrapViewContentMode)contentMode blendMode:(QGHWDTextureBlendMode)blendMode
 {
     UIView *containerView = self.effectContainerView;
-    FamVapWrapView *wrapView = [[FamVapWrapView alloc] initWithFrame:containerView.bounds];
-    wrapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    FamVapWrapView *wrapView = [[FamVapWrapView alloc] initWithFrame:CGRectZero];
     wrapView.contentMode = contentMode;
     wrapView.autoDestoryAfterFinish = YES;
     wrapView.hwd_enterBackgroundOP = [self currentEnterBackgroundOperationType];
     self.currentEffectContainerView = containerView;
     [containerView addSubview:wrapView];
+    [wrapView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(containerView);
+        make.leading.trailing.equalTo(containerView);
+    }];
+    [containerView layoutIfNeeded];
     [wrapView setMute:NO];
 
     if (blendMode == QGHWDTextureBlendMode_AlphaRight) {

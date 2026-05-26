@@ -2,11 +2,12 @@
 //  JFUIKitDemoListViewController.m
 //  ObjcDemo
 //
-//  Created by Codex on 2026/5/25.
+//  Created by huangdonghong on 2026/5/25.
 //
 
 #import "JFUIKitDemoListViewController.h"
 #import "JFUIKitDemoViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface JFUIKitDemoListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -41,12 +42,15 @@
 
 - (void)setupTableView
 {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleInsetGrouped];
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleInsetGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"JFUIKitDemoCell"];
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.view);
+        make.leading.trailing.equalTo(self.view);
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

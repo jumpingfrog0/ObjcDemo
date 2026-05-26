@@ -2,7 +2,7 @@
 //  JFRoomChatBaseCell.m
 //  ObjcDemo
 //
-//  Created by AI Assistant on 2026/01/05.
+//  Created by huangdonghong on 2026/01/05.
 //
 
 #import "JFRoomChatBaseCell.h"
@@ -17,12 +17,12 @@ NSString *const JFRoomChatSystemCellReuseIdentifier = @"JFRoomChatSystemCellReus
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    // 初始化代码
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-    // Configure the view for the selected state
+    // 配置选中状态
 }
 
 /**

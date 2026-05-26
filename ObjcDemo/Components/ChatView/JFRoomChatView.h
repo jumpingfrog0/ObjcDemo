@@ -2,7 +2,7 @@
 //  JFRoomChatView.h
 //  ObjcDemo
 //
-//  Created by AI Assistant on 2026/01/05.
+//  Created by huangdonghong on 2026/01/05.
 //
 
 #import <UIKit/UIKit.h>

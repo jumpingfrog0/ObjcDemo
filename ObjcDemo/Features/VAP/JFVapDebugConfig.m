@@ -2,10 +2,11 @@
 //  JFVapDebugConfig.m
 //  ObjcDemo
 //
-//  Created by Codex on 2026/5/18.
+//  Created by huangdonghong on 2026/5/18.
 //
 
 #import "JFVapDebugConfig.h"
+#import <Masonry/Masonry.h>
 
 @interface JFVapDebugConfigTableViewCell ()
 
@@ -36,6 +37,7 @@
         _descLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
         _descLabel.textColor = [UIColor colorWithWhite:0.45 alpha:1.0];
         _descLabel.numberOfLines = 0;
+        _descLabel.hidden = YES;
 
         _switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
         [_switchView addTarget:self action:@selector(onSwitchChanged:) forControlEvents:UIControlEventValueChanged];
@@ -49,26 +51,32 @@
         [self.contentView addSubview:_descLabel];
         [self.contentView addSubview:_switchView];
         [self.contentView addSubview:_textfield];
+        [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView.mas_leading).offset(20.0);
+            make.trailing.lessThanOrEqualTo(self.contentView.mas_trailing).offset(-20.0);
+            make.trailing.lessThanOrEqualTo(_switchView.mas_leading).offset(-12.0);
+            make.trailing.lessThanOrEqualTo(_textfield.mas_leading).offset(-12.0);
+            make.centerY.equalTo(self.contentView.mas_centerY);
+            make.top.greaterThanOrEqualTo(self.contentView.mas_top).offset(8.0);
+            make.bottom.lessThanOrEqualTo(self.contentView.mas_bottom).offset(-8.0);
+        }];
+        [_descLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.trailing.equalTo(_titleLabel);
+            make.top.equalTo(_titleLabel.mas_bottom).offset(2.0);
+        }];
+        [_switchView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.equalTo(self.contentView.mas_trailing).offset(-20.0);
+            make.centerY.equalTo(self.contentView.mas_centerY);
+        }];
+        [_textfield mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.equalTo(self.contentView.mas_trailing).offset(-20.0);
+            make.centerY.equalTo(self.contentView.mas_centerY);
+            make.width.mas_equalTo(96.0);
+            make.height.mas_equalTo(30.0);
+        }];
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return self;
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-
-    CGFloat width = CGRectGetWidth(self.contentView.bounds);
-    CGFloat height = CGRectGetHeight(self.contentView.bounds);
-    CGFloat contentLeft = 20.0;
-    CGFloat controlWidth = 100.0;
-    CGFloat labelWidth = width - contentLeft - controlWidth - 20.0;
-
-    self.titleLabel.frame = CGRectMake(contentLeft, 8.0, labelWidth, height - 16.0);
-    self.descLabel.frame = CGRectZero;
-
-    self.switchView.frame = CGRectMake(width - 70.0, (height - CGRectGetHeight(self.switchView.bounds)) * 0.5, 51.0, 31.0);
-    self.textfield.frame = CGRectMake(width - 118.0, 7.0, 96.0, height - 14.0);
 }
 
 - (void)setContent:(JFVapDebugConfigModel *)model

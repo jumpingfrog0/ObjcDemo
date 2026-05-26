@@ -2,7 +2,7 @@
 //  JFObjCTestListViewController.m
 //  ObjcDemo
 //
-//  Created by Codex on 2026/5/18.
+//  Created by huangdonghong on 2026/5/18.
 //
 
 #import "JFObjCTestListViewController.h"
@@ -13,6 +13,7 @@
 #import "OtherTestCase.h"
 #import "ThreadTestCase.h"
 #import "AutoReleasePoolTestCase.h"
+#import <Masonry/Masonry.h>
 
 @interface JFObjCTestListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -66,12 +67,15 @@
 
 - (void)setupTableView
 {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ObjCTestCell"];
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.view);
+        make.leading.trailing.equalTo(self.view);
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
