@@ -1,0 +1,31 @@
+ObjcDemo/Features/JFUIKit/JFUIKitDemoViewController.m
+  s_fe0ca33a9cf600::t_d5235ead9f45b7 5,10,87-90,98,101-102,174-176,193-196,230-233,455,458
+  s_fe0ca33a9cf600::t_a76406ca6f1741 99-100,456-457
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCreate.m
+  s_81164617c461f1::t_c52ce68b87bf67 83-91,93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "6ec325232e206f0996a2611e45bd0c663679835e",
+  "prompts": {},
+  "logical_commit_id": "6ec325232e206f0996a2611e45bd0c663679835e",
+  "sessions": {
+    "s_81164617c461f1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5f59-8ca1-7592-b2a2-c176fc3af2f5",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    },
+    "s_fe0ca33a9cf600": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e6235-8c87-75e1-a4f2-69cd9dc8f469",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
