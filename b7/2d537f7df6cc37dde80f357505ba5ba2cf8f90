@@ -1,0 +1,82 @@
+ObjcDemo/Features/JFFoundation/JFFoundationDemoListViewController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/FamVapTestController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatModel.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/JFFoundation/JFFoundationDemoDetailViewController.m
+  s_fe0ca33a9cf600::t_2ed90418c6db42 5,13,59,63,66
+  s_fe0ca33a9cf600::t_bac135bfa5daf4 64-65
+ObjcDemo/Components/ChatView/JFRoomChatView.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatTextCell.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/JFFoundation/JFFoundationDemoListViewController.m
+  s_fe0ca33a9cf600::t_3052f2ac5b98c3 5,10,42,47,50
+  s_fe0ca33a9cf600::t_efaa252ed64ceb 48-49
+ObjcDemo/Features/JFUIKit/JFUIKitDemoListViewController.m
+  s_fe0ca33a9cf600::t_231efc5a20b1f2 51-52
+  s_fe0ca33a9cf600::t_74a5d2cf2d3e7a 5,10,45,50,53
+ObjcDemo/Features/ObjcTestCase/JFObjCTestListViewController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapResourceDownloader.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapImageCacheHelper.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/FamVapTestController.m
+  s_fe0ca33a9cf600::t_118790fc15c343 5,389,393,396-397,404,408,411-412,421,426,429-430,451,457,460-461
+  s_fe0ca33a9cf600::t_bc79ab6cbf414d 394-395,409-410,427-428,458-459
+ObjcDemo/Components/ChatView/JFRoomChatSystemCell.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatBaseCell.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/JFUIKit/JFUIKitDemoListViewController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatModel.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatBaseCell.m
+  s_fe0ca33a9cf600::t_36b4966fc6ebbf 20,25
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapResourceDownloader.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatTextCell.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Components/ChatView/JFRoomChatSystemCell.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapDebugConfig.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapDebugConfig.m
+  s_fe0ca33a9cf600::t_97660a99572401 5,9,54-56,62-76
+  s_fe0ca33a9cf600::t_df06773fe8c18e 40,57-61
+ObjcDemo/Features/JFFoundation/JFFoundationDemoDetailViewController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+ObjcDemo/Features/VAP/JFVapImageCacheHelper.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+AGENTS.md
+  s_fe0ca33a9cf600::t_63546d28c8c6e2 19
+ObjcDemo/Features/ObjcTestCase/JFObjCTestListViewController.m
+  s_fe0ca33a9cf600::t_2fe22e68ec073c 5,16,70,75,78
+  s_fe0ca33a9cf600::t_4cad498e13e37c 76-77
+ObjcDemo/Components/ChatView/JFRoomChatView.m
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+  s_fe0ca33a9cf600::t_2c04dbe9737e6b 73-74
+ObjcDemo/Features/JFUIKit/JFUIKitDemoViewController.h
+  s_fe0ca33a9cf600::t_8d21a7a595a85b 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "b72d537f7df6cc37dde80f357505ba5ba2cf8f90",
+  "prompts": {},
+  "logical_commit_id": "b72d537f7df6cc37dde80f357505ba5ba2cf8f90",
+  "sessions": {
+    "s_fe0ca33a9cf600": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e6235-8c87-75e1-a4f2-69cd9dc8f469",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
