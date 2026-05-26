@@ -1,0 +1,47 @@
+ObjcDemo/Features/JFUIKit/JFUIKitDemoViewController.h
+  s_81164617c461f1::t_3b61d1b4ec4c93 1-18
+ObjcDemo/Features/JFUIKit/JFUIKitDemoViewController.m
+  s_81164617c461f1::t_d109a3b1d1f990 393-397
+  s_81164617c461f1::t_c3a187adfec659 398
+  s_81164617c461f1::t_8f6a11f53d0a42 249,253-262,267-272
+  s_81164617c461f1::t_d8cc7bae81954c 483,486
+  s_81164617c461f1::t_3b61d1b4ec4c93 1-248,250-252,263-266,273-392,399-482,484-485,487-494
+ObjcDemo.xcodeproj/project.pbxproj
+  s_81164617c461f1::t_f66d498406e660 46-49,130-137,340-341,397-418,556-559
+ObjcDemo/Features/JFFoundation/JFFoundationDemoListViewController.m
+  s_81164617c461f1::t_a09cc7e7ca1114 1-77
+ObjcDemo/Features/JFFoundation/JFFoundationDemoListViewController.h
+  s_81164617c461f1::t_a09cc7e7ca1114 1-16
+ObjcDemo/Features/JFUIKit/JFUIKitDemoListViewController.h
+  s_81164617c461f1::t_3b61d1b4ec4c93 1-16
+ObjcDemo/Features/Home/JFRootViewController.m
+  s_81164617c461f1::t_5e163b648cba2e 19-20,48-57,139-150
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFTopToast.m
+  s_81164617c461f1::t_8da61d062dda65 120,123,130,141,151-168
+ObjcDemo/Features/JFFoundation/JFFoundationDemoDetailViewController.m
+  s_81164617c461f1::t_a09cc7e7ca1114 1-9,13-145,148,150-174,177-243,245-272
+  s_81164617c461f1::t_aa73480a11a4e7 10,175-176,244
+  s_81164617c461f1::t_3253ec30024543 146-147,149
+  s_81164617c461f1::t_c5e9caa3c52f4a 11-12
+ObjcDemo/Features/JFFoundation/JFFoundationDemoDetailViewController.h
+  s_81164617c461f1::t_a09cc7e7ca1114 1-18
+ObjcDemo/Features/JFUIKit/JFUIKitDemoListViewController.m
+  s_81164617c461f1::t_3b61d1b4ec4c93 1-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "fd6b32a804251f119f5afafa5ca3df4d824e49a6",
+  "prompts": {},
+  "logical_commit_id": "fd6b32a804251f119f5afafa5ca3df4d824e49a6",
+  "sessions": {
+    "s_81164617c461f1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5f59-8ca1-7592-b2a2-c176fc3af2f5",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
