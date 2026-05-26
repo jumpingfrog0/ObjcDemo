@@ -117,17 +117,17 @@ static CGFloat const kDismissDelayDuration = 2.0f;
     CGFloat height = 0.0;
     BOOL isShowNavBar = NO;
     UINavigationController *navVc = [[UIApplication sharedApplication] jf_mostTopViewController].navigationController;
+    CGFloat safeAreaTop = [self jf_toastSafeAreaTopInset];
 
-    BOOL isiPhoneX = [UIDevice jf_isiPhoneX];
     if (flag) {
-        height = isiPhoneX ? kToastHeight + 44 : kToastHeight;
+        height = kToastHeight + safeAreaTop;
     } else {
         if (navVc.navigationBar && !navVc.isNavigationBarHidden) {
             isShowNavBar = YES;
             height = kToastHeight;
         } else {
             isShowNavBar = NO;
-            height = isiPhoneX ? kToastHeight + 44 : kToastHeight;
+            height = kToastHeight + safeAreaTop;
         };
     }
 
@@ -138,11 +138,7 @@ static CGFloat const kDismissDelayDuration = 2.0f;
     if (isShowNavBar) {
         messageRect = background.bounds;
     } else {
-        if (isiPhoneX) {
-            messageRect = CGRectMake(0, 34, background.bounds.size.width, kToastHeight);
-        } else {
-            messageRect = background.bounds;
-        }
+        messageRect = CGRectMake(0, safeAreaTop, background.bounds.size.width, kToastHeight);
     }
     UILabel *messageLabel = [[UILabel alloc] initWithFrame:messageRect];
     messageLabel.textAlignment = NSTextAlignmentCenter;
@@ -152,6 +148,24 @@ static CGFloat const kDismissDelayDuration = 2.0f;
     [background addSubview:messageLabel];
 
     return background;
+}
+
+- (CGFloat)jf_toastSafeAreaTopInset {
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
+    if (!window) {
+        window = [UIApplication sharedApplication].keyWindow;
+    }
+
+    CGFloat topInset = 0.0;
+    if (@available(iOS 11.0, *)) {
+        topInset = window.safeAreaInsets.top;
+    }
+
+    if (topInset <= 0.0) {
+        topInset = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+
+    return MAX(topInset, 0.0);
 }
 
 - (UIColor *)jf_toastBackgroundColor {
