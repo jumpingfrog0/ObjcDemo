@@ -80,8 +80,17 @@
                                endPoint:(CGPoint)endPoint
                            cornerRadius:(CGFloat)radius
 {
+    NSMutableArray *cgColors = [NSMutableArray arrayWithCapacity:colors.count];
+    for (id color in colors) {
+        if ([color isKindOfClass:[UIColor class]]) {
+            [cgColors addObject:(__bridge id)((UIColor *)color).CGColor];
+        } else if (CFGetTypeID((__bridge CFTypeRef)color) == CGColorGetTypeID()) {
+            [cgColors addObject:color];
+        }
+    }
+
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.colors = colors;
+    gradientLayer.colors = cgColors;
     gradientLayer.locations = locations;
     gradientLayer.startPoint = startPoint;
     gradientLayer.endPoint = endPoint;

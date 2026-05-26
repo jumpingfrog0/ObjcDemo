@@ -2,11 +2,12 @@
 //  JFUIKitDemoViewController.m
 //  ObjcDemo
 //
-//  Created by Codex on 2026/5/25.
+//  Created by huangdonghong on 2026/5/25.
 //
 
 #import "JFUIKitDemoViewController.h"
 #import <JFUIKit/JFUIKit.h>
+#import <Masonry/Masonry.h>
 
 @interface JFUIKitDemoTextFieldProxy : NSObject <UITextFieldDelegate>
 @end
@@ -83,7 +84,10 @@
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
     self.scrollView.alwaysBounceVertical = YES;
     [self.view addSubview:self.scrollView];
-    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        make.leading.trailing.bottom.equalTo(self.view);
+    }];
 
     self.stackView = [[UIStackView alloc] initWithFrame:CGRectZero];
     self.stackView.axis = UILayoutConstraintAxisVertical;
@@ -91,19 +95,11 @@
     self.stackView.layoutMargins = UIEdgeInsetsMake(16, 16, 32, 16);
     self.stackView.layoutMarginsRelativeArrangement = YES;
     [self.scrollView addSubview:self.stackView];
-    self.stackView.translatesAutoresizingMaskIntoConstraints = NO;
-
-    [NSLayoutConstraint activateConstraints:@[
-        [self.scrollView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
-        [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
-        [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
-        [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
-        [self.stackView.topAnchor constraintEqualToAnchor:self.scrollView.contentLayoutGuide.topAnchor],
-        [self.stackView.leadingAnchor constraintEqualToAnchor:self.scrollView.contentLayoutGuide.leadingAnchor],
-        [self.stackView.trailingAnchor constraintEqualToAnchor:self.scrollView.contentLayoutGuide.trailingAnchor],
-        [self.stackView.bottomAnchor constraintEqualToAnchor:self.scrollView.contentLayoutGuide.bottomAnchor],
-        [self.stackView.widthAnchor constraintEqualToAnchor:self.scrollView.frameLayoutGuide.widthAnchor],
-    ]];
+    [self.stackView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.scrollView);
+        make.leading.trailing.equalTo(self.scrollView);
+        make.width.equalTo(self.scrollView);
+    }];
 }
 
 - (void)buildDemo
@@ -175,10 +171,9 @@
 
 - (void)addFixedHeight:(UIView *)view height:(CGFloat)height
 {
-    view.translatesAutoresizingMaskIntoConstraints = NO;
-    [NSLayoutConstraint activateConstraints:@[
-        [view.heightAnchor constraintEqualToConstant:height],
-    ]];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(height);
+    }];
 }
 
 - (void)addImage:(UIImage *)image title:(NSString *)title
@@ -193,13 +188,12 @@
     imageView.backgroundColor = [UIColor colorWithWhite:0.94 alpha:1.0];
     imageView.layer.cornerRadius = 8;
     imageView.clipsToBounds = YES;
-    imageView.translatesAutoresizingMaskIntoConstraints = NO;
-    [NSLayoutConstraint activateConstraints:@[
-        [imageView.widthAnchor constraintEqualToConstant:92],
-        [imageView.heightAnchor constraintEqualToConstant:72],
-    ]];
 
     [row addArrangedSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(92);
+        make.height.mas_equalTo(72);
+    }];
     [row addArrangedSubview:[self bodyLabel:title]];
     [self.stackView addArrangedSubview:row];
 }
@@ -225,11 +219,6 @@
         UIView *swatch = [[UIView alloc] init];
         swatch.backgroundColor = color;
         swatch.layer.cornerRadius = 8;
-        swatch.translatesAutoresizingMaskIntoConstraints = NO;
-        [NSLayoutConstraint activateConstraints:@[
-            [swatch.widthAnchor constraintEqualToConstant:80],
-            [swatch.heightAnchor constraintEqualToConstant:44],
-        ]];
 
         NSString *text = [NSString stringWithFormat:@"hex=%@ rgba=(%.2f, %.2f, %.2f, %.2f)",
                                                     [color jf_hexValueWithAlpha:YES],
@@ -238,6 +227,10 @@
                                                     [color jf_blue],
                                                     [color jf_alpha]];
         [row addArrangedSubview:swatch];
+        [swatch mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(44);
+        }];
         [row addArrangedSubview:[self bodyLabel:text]];
         [self.stackView addArrangedSubview:row];
     }
@@ -354,7 +347,6 @@
     [vertical setTitleColor:[UIColor colorWithWhite:0.18 alpha:1.0] forState:UIControlStateNormal];
     [vertical setImage:icon forState:UIControlStateNormal];
     vertical.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
-    vertical.frame = CGRectMake(0, 0, 180, 88);
     [vertical jf_alignVerticalWithSpacing:8];
     [self addFixedHeight:vertical height:88];
     [self.stackView addArrangedSubview:vertical];
@@ -364,7 +356,6 @@
     [horizontal setTitleColor:[UIColor colorWithWhite:0.18 alpha:1.0] forState:UIControlStateNormal];
     [horizontal setImage:icon forState:UIControlStateNormal];
     horizontal.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
-    horizontal.frame = CGRectMake(0, 0, 220, 56);
     [horizontal jf_alignHorizontalWithSpacing:12];
     [horizontal jf_setTitleColor:[UIColor systemRedColor] range:NSMakeRange(0, 2)];
     [self addFixedHeight:horizontal height:56];
@@ -460,9 +451,11 @@
     preview.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
-    imageView.frame = preview.view.bounds;
-    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [preview.view addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(preview.view);
+        make.leading.trailing.equalTo(preview.view);
+    }];
     [self.navigationController pushViewController:preview animated:YES];
 }
 
