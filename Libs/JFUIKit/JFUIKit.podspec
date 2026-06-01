@@ -23,7 +23,7 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
 
   s.homepage         = 'https://github.com/jumpingfrog0/JFUIKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'jumpingfrog0' => 'jumpingfrog0@gmail.com' }
+  s.author           = { 'huangdonghong' => 'jumpingfrog0@gmail.com' }
   s.source           = { :git => 'https://github.com/jumpingfrog0/JFUIKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
@@ -119,4 +119,3 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
   end
 
 end
-

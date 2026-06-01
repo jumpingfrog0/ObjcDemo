@@ -2,7 +2,7 @@
 //  JFThreadTestViewController.m
 //  ObjcDemo
 //
-//  Created by 黄东鸿 on 2024/4/13.
+//  Created by huangdonghong on 2024/4/13.
 //
 
 #import "JFThreadTestViewController.h"

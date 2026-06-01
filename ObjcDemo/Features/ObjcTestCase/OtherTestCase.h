@@ -2,7 +2,7 @@
 //  OtherTestCase.h
 //  ObjcDemo
 //
-//  Created by 黄东鸿 on 2024/4/7.
+//  Created by huangdonghong on 2024/4/7.
 //
 
 #import <Foundation/Foundation.h>

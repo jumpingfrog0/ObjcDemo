@@ -2,10 +2,10 @@
 //  NSDictionary+JFLog.m
 //  JFFoundation
 //
-//  Created by jumpingfrog0 on 2018/08/01.
+//  Created by huangdonghong on 2018/08/01.
 //
 //
-//  Copyright (c) 2017 Jumpingfrog0 LLC
+//  Copyright (c) 2017 huangdonghong
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

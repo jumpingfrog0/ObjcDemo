@@ -1,7 +1,7 @@
 // NSDictionary+JFJSON.m
 // Pods
 //
-// Created by sheldon on 2018/9/10.
+// Created by huangdonghong on 2018/9/10.
 //
 
 #import "NSDictionary+JFJSON.h"

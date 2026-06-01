@@ -2,7 +2,7 @@
 //  JFPerson.h
 //  ObjcDemo
 //
-//  Created by 黄东鸿 on 2024/2/29.
+//  Created by huangdonghong on 2024/2/29.
 //
 
 #import <Foundation/Foundation.h>

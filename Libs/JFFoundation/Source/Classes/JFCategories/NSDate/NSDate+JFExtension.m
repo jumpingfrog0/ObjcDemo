@@ -2,8 +2,8 @@
 //  NSDate+JFExtension.m
 //  JFFoundation
 //
-//  Created by sheldon on 25/10/2017.
-//  Copyright © 2017 jumpingfrog0. All rights reserved.
+//  Created by huangdonghong on 25/10/2017.
+//  Copyright © 2017 huangdonghong. All rights reserved.
 //
 
 #import "NSDate+JFExtension.h"
