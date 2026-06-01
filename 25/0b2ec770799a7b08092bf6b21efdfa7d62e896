@@ -1,0 +1,564 @@
+Libs/JFFoundation/Source/Classes/JFCategories/NSObject/NSObject+JFExtension.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFBar.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFBlur.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UILabel/UILabel+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFScroll.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/ReactNative/JFReactViewController.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/MemoryTestCase.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/OtherTestCase.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIDevice/UIDevice+JFInfo.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UITextField/UITextField+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSLocale/NSLocale+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFUIKit.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSDate/NSDate+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 6
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSURL/NSURL+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFEncrypt.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UITextField/UITextField+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/ViewController.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Models/Student.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFExtension.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFJSON.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/Threads/JFAliveThreadTestViewController.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFCompare.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+Libs/JFUIKit/Source/Classes/UIAlertController/UIAlertController+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/Threads/JFThreadTestViewController.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFBlur.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFBase64.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/NSBundle/NSBundle+JFUIKit.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIViewController/UIViewController+JFNavigation.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+ObjcDemo/Models/JFPerson.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCompress.h
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFJSON.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UINavigationController/UINavigationController+JFStyle.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UITextField/UITextField+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFBase64.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+ObjcDemo/Features/Threads/AliveThread.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSCalendar/NSCalendar+JFExtension.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UILabel/UILabel+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFRect.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/Hook/SwipeBack/UINavigationController+JFSwipeBack.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFAlpha.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFBlur.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UINavigationBar/UINavigationBar+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UILabel/UILabel+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/JFUIKit.podspec
+  s_e8016ca3d9b025::t_50224ec45b889c 26
+Libs/JFUIKit/Source/Classes/NSBundle/NSBundle+JFUIKit.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFValidate.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UINavigationController/UINavigationController+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDate/NSDate+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFValidate.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFURL.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIButton/UIButton+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCreate.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFNavigation.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFJSON.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSMutableArray/NSMutableArray+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JF.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFJSON.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSLocale/NSLocale+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSNumber/NSNumber+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFSandbox.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UINavigationItem/UINavigationItem+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFScreenshot.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/App/main.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIBarButtonItem/UIBarButtonItem+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFScreenshot.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSMutableAttributedString/NSMutableAttributedString+JFFormat.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSNumber/NSNumber+JFExtension.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSURL/NSURL+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIButton/UIButton+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/Hook/UITabBar/UITabBar+JFSwizzling.h
+  s_e8016ca3d9b025::t_d37200692b3474 6
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCompress.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/UIView/UIView+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFJSON.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIDevice/UIDevice+JFInfo.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/Hook/SwipeBack/UIViewController+JFSwipeBack.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFJSON.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/Hook/UITabBar/UITabBar+JFSwizzling.m
+  s_e8016ca3d9b025::t_d37200692b3474 6
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UINavigationController/UINavigationController+JFStyle.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFClip.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/UIColor/UIColor+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFEncrypt.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFSandbox.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIBarButtonItem/UIBarButtonItem+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UINavigationItem/UINavigationItem+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIToolBar/UIToolbar+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFDraw.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFJSON.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFTopToast.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIViewController/UIViewController+JFNavigation.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFNavigation.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSObject/NSObject+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/JFUIKit.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIColor/UIColor+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIAlertController/UIAlertController+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFAlpha.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UINavigationBar/UINavigationBar+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UINavigationBar/UINavigationBar+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFJSON.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+ObjcDemo/Features/ObjcTestCase/BlockTestCase.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFDraw.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFBase64.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIToolBar/UIToolBar+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFTopToast.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+ObjcDemo/Features/ObjcTestCase/BlockTestCase.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFLog.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+ObjcDemo/Features/ObjcTestCase/ThreadTestCase.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/Threads/JFThreadTestViewController.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Models/JFPerson.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Models/Teacher.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFBase64.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFBar.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Models/Student.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFBlur.m
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/Macro/LogMacro.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSMutableAttributedString/NSMutableAttributedString+JFFormat.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFFoundation.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/RuntimeTestCase.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSObject/NSObject+JFSwizzling.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFURL.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCreate.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFScroll.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIViewController/UIViewController+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSObject/NSObject+JFSwizzling.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+ObjcDemo/App/AppDelegate.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+ObjcDemo/Features/Threads/JFAliveThreadTestViewController.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFEncrypt.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+ObjcDemo/Features/KVCKVO/JFTest_KVC_KVO_ViewController.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/RuntimeTestCase.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIBarButtonItem/UIBarButtonItem+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFResize.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFURL.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFFilter.h
+  s_e8016ca3d9b025::t_d37200692b3474 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFUIKit/Source/Classes/UIToolBar/UIToolbar+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Models/Teacher.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFLog.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Swift/HelloWorld.swift
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UISegmentedControl/UISegmentedControl+Vertical.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFURL.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFResize.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFUIKit.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/ViewController.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDate/NSDate+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIColor/UIColor+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UISegmentedControl/UISegmentedControl+Vertical.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+ObjcDemo/Features/ObjcTestCase/OtherTestCase.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UINavigationItem/UINavigationItem+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFUIKit/Source/Classes/UINavigationController/UINavigationController+JFNavigation.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+ObjcDemo/Features/Threads/AliveThread.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFEncrypt.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIAlertController/UIAlertController+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSData/NSData+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+Libs/JFFoundation/Source/Classes/JFCategories/NSArray/NSArray+JFLog.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSString/NSString+JFCompare.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+ObjcDemo/Features/KVCKVO/JFTest_KVC_KVO_ViewController.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/JFFoundation.podspec
+  s_e8016ca3d9b025::t_50224ec45b889c 26
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFExtension.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/ThreadTestCase.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/Hook/SwipeBack/UIViewController+JFSwipeBack.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSURL/NSURL+JFExtension.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFRect.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFClip.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFExtension.m
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/Features/ObjcTestCase/MemoryTestCase.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFFilter.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d37200692b3474 7
+Libs/JFUIKit/Source/Classes/Hook/SwipeBack/UINavigationController+JFSwipeBack.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UINavigationController/UINavigationController+JFNavigation.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSCalendar/NSCalendar+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSDictionary/NSDictionary+JFLog.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIButton/UIButton+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/ReactNative/JFReactViewController.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+ObjcDemo/App/AppDelegate.m
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFUIKit/Source/Classes/UIDevice/UIDevice+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSLocale/NSLocale+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 4
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 7
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JF.h
+  s_e8016ca3d9b025::t_d37200692b3474 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSNumber/NSNumber+JF.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+Libs/JFUIKit/Source/Classes/UIApplication/UIApplication+JFExtension.h
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+  s_e8016ca3d9b025::t_d37200692b3474 8
+Libs/JFFoundation/Source/Classes/JFCategories/NSObject/NSObject+JFExtension.m
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+Libs/JFFoundation/Source/Classes/JFCategories/NSMutableAttributedString/NSMutableAttributedString+JF.h
+  s_e8016ca3d9b025::t_d35cd5a2674ae7 8
+  s_e8016ca3d9b025::t_ff2266b4427de6 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "250b2ec770799a7b08092bf6b21efdfa7d62e896",
+  "prompts": {},
+  "logical_commit_id": "250b2ec770799a7b08092bf6b21efdfa7d62e896",
+  "sessions": {
+    "s_e8016ca3d9b025": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e821c-dac0-79b0-943e-b1ec49103d43",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
