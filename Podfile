@@ -76,3 +76,9 @@ target 'ObjcDemo' do
   end
 
 end
+
+target 'ObjcDemoTests' do
+
+  pod 'JFFoundation', :path => './Libs/JFFoundation'
+
+end

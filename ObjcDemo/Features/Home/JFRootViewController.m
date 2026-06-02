@@ -16,7 +16,6 @@
 #import "JFReactViewController.h"
 #import "JFObjCTestListViewController.h"
 #import "FamVapTestController.h"
-#import "JFFoundationDemoListViewController.h"
 #import "JFUIKitDemoListViewController.h"
 
 @interface JFRootViewController ()
@@ -45,11 +44,6 @@
     
     
     self.testItems = [NSMutableArray array];
-    [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"JFFoundation"
-                                                    actionBlock:^{
-                                 [weakSelf navigateToJFFoundation];
-                             }]];
-
     [self.testItems addObject:[[JFTestItem alloc] initWithTitle:@"JFUIKit"
                                                     actionBlock:^{
                                  [weakSelf navigateToJFUIKit];
@@ -136,12 +130,6 @@
 - (void)navigateToASR
 {
     JFAsrViewController *vc = [JFAsrViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)navigateToJFFoundation
-{
-    JFFoundationDemoListViewController *vc = [JFFoundationDemoListViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
