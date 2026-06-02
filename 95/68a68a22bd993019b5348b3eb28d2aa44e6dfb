@@ -1,0 +1,72 @@
+ObjcDemo.xcodeproj/project.pbxproj
+  s_5a7e5c3fa4b5b9::t_c49b6e0f9539f4 15,80,94,179,190,225-226,518,538,627-648,782,801
+  s_5a7e5c3fa4b5b9::t_fb26dda49d9423 10-12,14,17-18,20,22-23,55,59-64,66,69-78,82,85-89,91,95-102,130,169,182,186-189,191-193,322-346,365,373,475-485,506,510,517,521-528,534-537,539-552,601,607-613,691-714,758-766,780-781,783-800,802-816,1022-1030
+ObjcDemoTests/JFFoundation/JFNSMutableDictionaryExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-33
+ObjcDemoTests/JFFoundation/JFNSCalendarExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-24
+ObjcDemoTests/JFFoundation/JFNSDataExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-21,23-34
+  s_5a7e5c3fa4b5b9::t_d246713eea180f 22
+ObjcDemoTests/JFFoundation/JFNSLocaleExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 2-3,5,8-9,11-12,14,16-17,19,21
+  s_5a7e5c3fa4b5b9::t_d246713eea180f 18
+ObjcDemoTests/JFFoundation/JFNSArrayExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-18,20-23,25-46,55-65
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 19,24,47-54
+ObjcDemoTests/JFFoundation/JFNSObjectExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-15,17,19-88,92-94
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 89,91
+  s_5a7e5c3fa4b5b9::t_83369243053bea 16,18,90
+ObjcDemoTests/JFFoundation/JFNSDictionarySafeTests.m
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 32-35,46-48,50,54-57,63,66
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-31,36-45,49,51-53,58-62,64-65,67-71
+ObjcDemoTests/JFFoundation/JFNSDateExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-51
+ObjcDemoTests/JFFoundation/JFNSStringExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 40-41,63,68
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-39,42-62,64-67,69-101
+ObjcDemoTests/JFFoundation/JFNSMutableAttributedStringExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-25
+ObjcDemoTests/JFFoundation/JFNSDictionaryExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_d246713eea180f 36,40,42-43
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 2-3,5,8,11,14,16,18-20,23,26,28-29,32,34-35,37-39,41,44
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 45
+ObjcDemoTests/JFFoundation/JFFloatUtilsTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-24
+Podfile
+  s_5a7e5c3fa4b5b9::t_036db45efdb7a0 79-80,82,84
+  s_5a7e5c3fa4b5b9::t_97d62d5b896d36 81,83
+ObjcDemoTests/JFFoundation/JFNSURLOSSImageURLTests.m
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-18,21,23-38,41,44-46,53-69
+  s_5a7e5c3fa4b5b9::t_d246713eea180f 19-20,22
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 39-40,42-43,47-52
+ObjcDemo.xcodeproj/xcshareddata/xcschemes/ObjcDemo.xcscheme
+  s_5a7e5c3fa4b5b9::t_70a2c70bcfc649 24-37,46-67
+ObjcDemoTests/JFFoundation/JFNSMutableArraySafeTests.m
+  s_5a7e5c3fa4b5b9::t_b415bc426f6bfb 10-11,41-42,56-57,66,69
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 2-3,5,8-9,13,16,18,20-26,29,31-40,45,47-55,58-59,62,64-65,67-68
+ObjcDemoTests/JFFoundation/JFNSErrorExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 1-41
+ObjcDemoTests/JFFoundation/JFNSURLComponentsTests.m
+  s_5a7e5c3fa4b5b9::t_2c595d065ad05e 1-35
+ObjcDemoTests/JFFoundation/JFNSNumberExtensionTests.m
+  s_5a7e5c3fa4b5b9::t_e14080f7fce3e6 2-3,5,8-9,11-12,14,16-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "9568a68a22bd993019b5348b3eb28d2aa44e6dfb",
+  "prompts": {},
+  "logical_commit_id": "9568a68a22bd993019b5348b3eb28d2aa44e6dfb",
+  "sessions": {
+    "s_5a7e5c3fa4b5b9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e8442-a5ea-7b41-a53c-2f8efd905507",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
