@@ -30,5 +30,6 @@
 #define NSURL_JF_h
 
 #import "NSURL+JFExtension.h"
+#import "NSURL+JFOSSImageURL.h"
 
 #endif /* NSURL_JF_h */

@@ -13,9 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)jf_safeAddObject:(id)obj;
 - (void)jf_safeRemoveFirstObject;
+- (void)jf_safeRemoveLastObject;
 - (void)jf_safeRemoveObjectAtIndex:(NSUInteger)index;
 - (void)jf_safeReplaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject;
 - (void)jf_safeInsertObject:(id)anObject atIndex:(NSUInteger)index;
+- (nullable id)jf_safePopFirstObject;
+- (nullable id)jf_safePopLastObject;
+- (NSMutableArray *)jf_upsetData;
 
 @end
 

@@ -29,5 +29,16 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (JFExtension)
+
+@property (nonatomic, copy) NSArray<NSString *> *jf_ignoredIvarNames;
+
+- (id)jf_safeValueForKey:(NSString *)key;
+- (void)jf_safeSetValue:(id)value forKey:(NSString *)key;
+- (instancetype)jf_copyWithZone:(NSZone *)zone;
+- (void)jf_encode:(NSCoder *)aCoder;
+- (void)jf_decode:(NSCoder *)aDecoder;
+- (NSArray<NSString *> *)jf_propertyKeys;
+- (NSDictionary *)jf_dictionaryWithProperties;
 - (id)jf_performSelector:(SEL)sel withObjects:(NSArray *)objects;
+
 @end

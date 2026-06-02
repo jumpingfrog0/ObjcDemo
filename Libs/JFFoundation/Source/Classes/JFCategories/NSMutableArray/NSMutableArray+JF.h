@@ -30,6 +30,7 @@
 #define NSMutableArray_JF_h
 
 #import "NSMutableArray+JFExtension.h"
-#import "NSArray+JFSafe.h"
+#import "NSMutableArray+JFSafe.h"
+#import "NSMutableArray+JFQueueStack.h"
 
 #endif /* NSMutableArray_JF_h */

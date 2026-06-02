@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/Classes/JFFoundation.h'
   s.public_header_files = 'Source/Classes/JFFoundation.h'
-  s.frameworks = 'Foundation'
+  s.frameworks = 'Foundation', 'UIKit'
 
   s.subspec 'Macro' do |ss|
   	ss.source_files = 'Source/Classes/Macro/*.{h,m}'

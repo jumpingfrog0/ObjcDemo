@@ -29,13 +29,29 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, JFTruncateStringPosition) {
+    JFTruncateStringPositionStart = 0,
+    JFTruncateStringPositionMiddle,
+    JFTruncateStringPositionEnd
+};
+
 @interface NSString (JFExtension)
 
 + (NSString *)jf_parseString:(NSString*)string separatorIndexs:(NSArray *)indexs separator:(NSString *)separator;
 
++ (CGFloat)jf_heightForText:(NSString *)text inWidth:(CGFloat)widthValue andFont:(UIFont *)font;
++ (NSString *)jf_timeStringWithInterval:(NSInteger)timeInterval;
++ (NSString *)jf_timerDayStringWithInterval:(NSInteger)timerInterval;
++ (NSString *)jf_decimalStyleStringWithNum:(NSNumber *)number;
++ (NSString *)jf_millionStyleStringWithNum:(UInt64)number;
++ (NSString *)jf_stringWithFormattedUnsignedInteger:(NSUInteger)integer;
++ (BOOL)jf_stringIsEmpty:(NSString *)aString;
+
 - (CGSize)jf_safeSizeWithFont:(UIFont *)font;
 - (CGSize)jf_safeSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
 - (CGSize)jf_safeSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
+- (CGSize)jf_sizeWithFont:(UIFont *)font;
+- (CGSize)jf_sizeWithMyFont:(UIFont *)fontToUse;
 
 + (NSString *)jf_zodiacSignWithMonth:(NSInteger)month day:(NSInteger)day;
 + (NSString *)jf_zodiacSignWithTs:(NSTimeInterval)ts;
@@ -53,6 +69,12 @@
 - (NSInteger)jf_realLength;
 
 - (NSString *)jf_trim;
+- (NSString *)jf_trimmingWhiteSpaceAtBothEnd;
+- (NSString *)jf_trimmingNewlineAtBothEnd;
+- (NSString *)jf_removeAllSpaceAndNewLine;
+- (NSString *)jf_replaceUnicode;
+- (NSString *)jf_replaceMEWithBilin;
+- (NSString *)jf_stringBySecuringAtMiddle;
 
 
 /// 截取字符串，末尾会加省略号
@@ -65,7 +87,27 @@
 ///   - length: 长度
 ///   - ellipsis: 是否加省略号
 - (NSString *)jf_stringByTruncatingToLength:(NSUInteger)length ellipsis:(BOOL)ellipsis;
+- (NSString *)jf_stringByTruncatingToLength:(int)length direction:(JFTruncateStringPosition)truncateFrom;
+- (NSString *)jf_stringByTruncatingToLength:(int)length direction:(JFTruncateStringPosition)truncateFrom withEllipsisString:(NSString *)ellipsis;
+- (NSString *)jf_stringByTruncatingToWidth:(CGFloat)width withFont:(UIFont *)font;
+- (NSString *)jf_truncatingString:(NSDictionary *)attribute maxWidth:(CGFloat)maxWidth;
+- (NSString *)jf_truncatedStringWithMaxLength:(NSInteger)limit;
+- (NSString *)jf_safeSubStringWithMaxLength:(NSInteger)limit;
 
 - (NSString *)jf_filterXMLEscapeChar;
+- (NSString *)jf_maskPhone;
+- (NSDictionary *)jf_urlParams;
+- (NSString *)jf_stringByAddUrlParam:(NSString *)key value:(NSString *)value;
+- (NSString *)jf_transformToPinyin;
+- (NSString *)jf_transformToPinyinFirstLetter;
+- (BOOL)jf_containsString:(NSString *)string;
+- (BOOL)jf_containsString:(NSString *)string options:(NSStringCompareOptions)options;
+- (long)jf_longValue;
+- (long long)jf_longLongValue;
+- (unsigned long long)jf_unsignedLongLongValue;
+- (BOOL)jf_isPureInt;
+- (NSInteger)jf_countOccurentceOfString:(NSString *)searchString;
+- (NSString *)jf_stringByRemoveString:(NSString *)string;
++ (NSString *)jf_mergeString1:(NSString *)string1 string2:(NSString *)string2;
 
 @end

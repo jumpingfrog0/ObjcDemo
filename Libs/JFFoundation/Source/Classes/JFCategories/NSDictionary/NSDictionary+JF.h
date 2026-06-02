@@ -33,5 +33,6 @@
 #import "NSDictionary+JFURL.h"
 #import "NSDictionary+JFJSON.h"
 #import "NSDictionary+JFLog.h"
+#import "NSDictionary+JFSafe.h"
 
 #endif /* NSDictionary_JF_h */
