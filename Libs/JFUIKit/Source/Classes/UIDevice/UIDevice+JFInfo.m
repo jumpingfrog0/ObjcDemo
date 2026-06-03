@@ -174,6 +174,39 @@
     return machineName;
 }
 
++ (NSString *)jf_modelName
+{
+    static NSDictionary *modelNames;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        modelNames = @{
+            @"iPhone6,1" : @"iPhone 5s",
+            @"iPhone6,2" : @"iPhone 5s",
+            @"iPhone7,1" : @"iPhone 6 Plus",
+            @"iPhone7,2" : @"iPhone 6",
+            @"iPhone8,1" : @"iPhone 6s",
+            @"iPhone8,2" : @"iPhone 6s Plus",
+            @"iPhone8,4" : @"iPhone SE",
+            @"iPhone9,1" : @"iPhone 7",
+            @"iPhone9,2" : @"iPhone 7 Plus",
+            @"iPhone9,3" : @"iPhone 7",
+            @"iPhone9,4" : @"iPhone 7 Plus",
+            @"iPhone10,1" : @"iPhone 8",
+            @"iPhone10,2" : @"iPhone 8 Plus",
+            @"iPhone10,3" : @"iPhone X",
+            @"iPhone10,4" : @"iPhone 8",
+            @"iPhone10,5" : @"iPhone 8 Plus",
+            @"iPhone10,6" : @"iPhone X",
+            @"i386" : @"Simulator x86",
+            @"x86_64" : @"Simulator x64",
+            @"arm64" : @"Simulator arm64",
+        };
+    });
+
+    NSString *model = [self jf_model];
+    return modelNames[model] ?: model;
+}
+
 - (NSString *)jf_uuid
 {
     return nil;
@@ -242,6 +275,44 @@
     if ([platform isEqualToString:@"iPhone10,3"])    return YES;
     if ([platform isEqualToString:@"iPhone10,6"])    return YES;
     return NO;
+}
+
++ (BOOL)jf_isNotchScreen
+{
+    if (@available(iOS 11.0, *)) {
+        UIWindow *keyWindow = UIApplication.sharedApplication.keyWindow;
+        if (!keyWindow) {
+            keyWindow = UIApplication.sharedApplication.delegate.window;
+        }
+        return keyWindow.safeAreaInsets.bottom > 0;
+    }
+    return NO;
+}
+
++ (CGFloat)jf_tabBarHeight
+{
+    return [self jf_isNotchScreen] ? 83.0f : 49.0f;
+}
+
++ (CGFloat)jf_statusBarHeight
+{
+    if (@available(iOS 13.0, *)) {
+        for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
+            if (![scene isKindOfClass:UIWindowScene.class]) {
+                continue;
+            }
+            UIWindowScene *windowScene = (UIWindowScene *)scene;
+            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+                return windowScene.statusBarManager.statusBarFrame.size.height;
+            }
+        }
+    }
+    return UIApplication.sharedApplication.statusBarFrame.size.height;
+}
+
++ (CGFloat)jf_navigationBarHeight
+{
+    return [self jf_statusBarHeight] + 44.0f;
 }
 
 + (BOOL)jf_isPlus

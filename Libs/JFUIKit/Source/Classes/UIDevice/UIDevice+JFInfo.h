@@ -72,6 +72,11 @@
  */
 + (NSString *)jf_model;
 
+/**
+ * 设备型号名称，未知型号返回 jf_model 的值
+ */
++ (NSString *)jf_modelName;
+
 - (NSString *)jf_uuid;
 
 /**
@@ -115,6 +120,18 @@
  * @return iPhone X 返回 YES，反之 NO
  */
 + (BOOL)jf_isiPhoneX;
+
+/**
+ * 当前设备是否有安全区刘海/底部区域
+ */
++ (BOOL)jf_isNotchScreen;
+
+/**
+ * 常用系统 UI 高度
+ */
++ (CGFloat)jf_tabBarHeight;
++ (CGFloat)jf_statusBarHeight;
++ (CGFloat)jf_navigationBarHeight;
 
 /**
  * 设备是否是 iPhone Plus

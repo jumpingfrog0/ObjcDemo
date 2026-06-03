@@ -54,4 +54,31 @@
  * @param range 范围
  */
 - (void)jf_setTitleColor:(UIColor *)color range:(NSRange)range;
+
+/**
+ * 扩大按钮点击区域
+ * @param top 顶部增量，正数扩大，负数缩小
+ * @param trailing 尾部增量，正数扩大，负数缩小
+ * @param bottom 底部增量，正数扩大，负数缩小
+ * @param leading 首部增量，正数扩大，负数缩小
+ */
+- (void)jf_setEnlargeEdgeWithTop:(CGFloat)top
+                        trailing:(CGFloat)trailing
+                          bottom:(CGFloat)bottom
+                         leading:(CGFloat)leading;
+
+/**
+ * 添加圆形描边动画
+ * @param from 起始角度
+ * @param width 线宽
+ * @param duration 动画时长
+ */
+- (void)jf_animationStrokeRoundLineFromAngle:(CGFloat)from
+                                   lineWidth:(CGFloat)width
+                           animationDuration:(NSTimeInterval)duration;
+
+/**
+ * 移除按钮图层上的所有动画
+ */
+- (void)jf_removeLayerAnimations;
 @end

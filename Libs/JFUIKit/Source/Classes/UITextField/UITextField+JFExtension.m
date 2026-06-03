@@ -179,4 +179,40 @@
     }];
     return  mStr;
 }
+
+- (void)jf_limitTextLengthTo:(NSInteger)maxLength
+{
+    [self jf_limitTextLengthTo:maxLength limitDo:^{
+        if (self.text.length > maxLength) {
+            self.text = [self.text substringToIndex:maxLength];
+        }
+    }];
+}
+
+- (void)jf_limitTextLengthTo:(NSInteger)maxLength limitDo:(void (^)(void))doBlock
+{
+    UITextRange *selectedRange = self.markedTextRange;
+    UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+    // 中文输入法高亮拼音阶段不截断，避免破坏正在输入的内容
+    if (position || self.text.length <= maxLength) {
+        return;
+    }
+
+    if (doBlock) {
+        doBlock();
+    }
+}
+
++ (BOOL)jf_textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+   replacementString:(NSString *)string
+       maxLengthLimit:(NSUInteger)maxLength
+{
+    NSUInteger oldLength = textField.text.length;
+    NSUInteger replacementLength = string.length;
+    NSUInteger rangeLength = range.length;
+    NSUInteger newLength = oldLength - rangeLength + replacementLength;
+    BOOL returnKey = [string rangeOfString:@"\n"].location != NSNotFound;
+    return newLength <= maxLength || returnKey;
+}
 @end

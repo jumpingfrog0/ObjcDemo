@@ -31,4 +31,9 @@
 @interface UIAlertController (JFExtension)
 - (void)show;
 - (void)show:(BOOL)animated;
+
+/**
+ * 设置 message 文本的对齐方式
+ */
+- (void)jf_configMessageAlignment:(NSTextAlignment)alignment;
 @end

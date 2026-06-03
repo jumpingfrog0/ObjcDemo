@@ -27,8 +27,6 @@
 #import "UITabBar+JFSwizzling.h"
 #import <objc/runtime.h>
 
-BOOL swizzleEnabled = NO;
-
 @implementation UITabBar (JFSwizzling)
 static void ExchangedMethod(SEL originalSelector, SEL swizzledSelector, Class class) {
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
@@ -45,8 +43,6 @@ static void ExchangedMethod(SEL originalSelector, SEL swizzledSelector, Class cl
 
 + (void)load
 {
-    NSLog(@"Ah! `-[UITabBar hitTest:withEvent:]` are swizzled");
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class class = [self class];
@@ -58,18 +54,20 @@ static void ExchangedMethod(SEL originalSelector, SEL swizzledSelector, Class cl
 // 让图片超出部分也能响应点击事件
 - (UIView *)s_hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
-    if (!self.clipsToBounds && !self.hidden && self.alpha > 0) {
-        UIView *result = [super hitTest:point withEvent:event];
+    if (self.hidden || self.alpha <= 0.01) {
+        return nil;
+    }
+
+    UIView *result = [super hitTest:point withEvent:event];
+    if (result) {
+        return result;
+    }
+
+    for (UIView *subview in self.subviews.reverseObjectEnumerator) {
+        CGPoint subPoint = [subview convertPoint:point fromView:self];
+        result = [subview hitTest:subPoint withEvent:event];
         if (result) {
             return result;
-        } else {
-            for (UIView *subview in self.subviews.reverseObjectEnumerator) {
-                CGPoint subPoint = [subview convertPoint:point fromView:self];
-                result           = [subview hitTest:subPoint withEvent:event];
-                if (result) {
-                    return result;
-                }
-            }
         }
     }
     return nil;

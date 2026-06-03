@@ -30,6 +30,13 @@
 
 @interface UILabel (JFExtension)
 
++ (UILabel *)jf_labelWithTextColor:(UIColor *)textColor font:(UIFont *)font;
++ (UILabel *)jf_labelWithTextColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment font:(UIFont *)font;
++ (UILabel *)jf_labelWithFrame:(CGRect)frame textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment font:(UIFont *)font;
+
+- (CGSize)jf_fittedSize;
+- (void)jf_clipToTextBounds;
+
 - (void)jf_setTextColor:(UIColor *)color range:(NSRange)range;
 - (void)jf_setKeywordColor:(UIColor *)color keyword:(NSString *)keyword;
 - (void)jf_setLineSpacing:(CGFloat)space;

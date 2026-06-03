@@ -94,11 +94,11 @@
                 break;
             }
         }
-        
+
         // if key window is not exist
         if (!window) {
             window = [UIApplication sharedApplication].windows.firstObject;
-            
+
         }
         if (!window) {   // if window still is not exists
             if ([[UIApplication sharedApplication].delegate respondsToSelector:@selector(window)]) {
@@ -118,5 +118,54 @@
         }
     }
     return window;
+}
+
+- (void)jf_pauseLayer
+{
+    CALayer *layer = self.layer;
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+- (void)jf_resumeLayer
+{
+    CALayer *layer = self.layer;
+    CFTimeInterval pausedTime = layer.timeOffset;
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePause;
+}
+
++ (CAKeyframeAnimation *)jf_createFloatingAnimationInFrame:(CGRect)frame
+{
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    CGMutablePathRef path = CGPathCreateMutable();
+
+    int height = -150 + arc4random() % 40;
+    int xOffset = frame.origin.x;
+    int yOffset = frame.origin.y;
+    int waveWidth = 40;
+    CGPoint point1 = CGPointMake(xOffset, yOffset);
+    CGPoint point2 = CGPointMake(xOffset, height + yOffset);
+    CGPoint point3 = CGPointMake(xOffset, height * 2 + yOffset);
+    CGPoint point4 = CGPointMake(xOffset, height * 2 + yOffset);
+
+    CGPathMoveToPoint(path, NULL, point1.x, point1.y);
+    if (arc4random() % 2) {
+        CGPathAddQuadCurveToPoint(path, NULL, point1.x - arc4random() % waveWidth, point1.y + height / 2.0, point2.x, point2.y);
+        CGPathAddQuadCurveToPoint(path, NULL, point2.x + arc4random() % waveWidth, point2.y + height / 2.0, point3.x, point3.y);
+        CGPathAddQuadCurveToPoint(path, NULL, point3.x - arc4random() % waveWidth, point3.y + height / 2.0, point4.x, point4.y);
+    } else {
+        CGPathAddQuadCurveToPoint(path, NULL, point1.x + arc4random() % waveWidth, point1.y + height / 2.0, point2.x, point2.y);
+        CGPathAddQuadCurveToPoint(path, NULL, point2.x - arc4random() % waveWidth, point2.y + height / 2.0, point3.x, point3.y);
+        CGPathAddQuadCurveToPoint(path, NULL, point3.x + arc4random() % waveWidth, point3.y + height / 2.0, point4.x, point4.y);
+    }
+    animation.path = path;
+    animation.calculationMode = kCAAnimationCubicPaced;
+    CGPathRelease(path);
+    return animation;
 }
 @end

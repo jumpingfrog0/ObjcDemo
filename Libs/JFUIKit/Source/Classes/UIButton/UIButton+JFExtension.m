@@ -27,8 +27,14 @@
 //
 
 #import "UIButton+JFExtension.h"
+#import <objc/runtime.h>
 
 @implementation UIButton (JFExtension)
+static char jf_enlargeTopKey;
+static char jf_enlargeTrailingKey;
+static char jf_enlargeBottomKey;
+static char jf_enlargeLeadingKey;
+
 - (void)jf_alignVerticalWithSpacing:(CGFloat)spacing bottomPadding:(CGFloat)bottomPadding {
     CGSize imageSize = self.imageView.image.size;
     CGSize titleSize = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:self.titleLabel.font}];
@@ -69,5 +75,82 @@
                      range:NSMakeRange(0, self.currentTitle.length)];
     [attrStr addAttribute:NSForegroundColorAttributeName value:color range:range];
     [self setAttributedTitle:attrStr forState:UIControlStateNormal];
+}
+
+- (void)jf_setEnlargeEdgeWithTop:(CGFloat)top
+                        trailing:(CGFloat)trailing
+                          bottom:(CGFloat)bottom
+                         leading:(CGFloat)leading
+{
+    objc_setAssociatedObject(self, &jf_enlargeTopKey, @(top), OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &jf_enlargeTrailingKey, @(trailing), OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &jf_enlargeBottomKey, @(bottom), OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &jf_enlargeLeadingKey, @(leading), OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (CGRect)jf_enlargedRect
+{
+    NSNumber *topEdge = objc_getAssociatedObject(self, &jf_enlargeTopKey);
+    NSNumber *trailingEdge = objc_getAssociatedObject(self, &jf_enlargeTrailingKey);
+    NSNumber *bottomEdge = objc_getAssociatedObject(self, &jf_enlargeBottomKey);
+    NSNumber *leadingEdge = objc_getAssociatedObject(self, &jf_enlargeLeadingKey);
+    if (topEdge && trailingEdge && bottomEdge && leadingEdge) {
+        return CGRectMake(self.bounds.origin.x - leadingEdge.floatValue,
+                          self.bounds.origin.y - topEdge.floatValue,
+                          self.bounds.size.width + leadingEdge.floatValue + trailingEdge.floatValue,
+                          self.bounds.size.height + topEdge.floatValue + bottomEdge.floatValue);
+    }
+    return self.bounds;
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (!self.userInteractionEnabled || !self.enabled || self.hidden || self.alpha <= 0.01) {
+        return nil;
+    }
+
+    CGRect rect = [self jf_enlargedRect];
+    if (CGRectEqualToRect(rect, self.bounds)) {
+        return [super hitTest:point withEvent:event];
+    }
+    return CGRectContainsPoint(rect, point) ? self : nil;
+}
+
+- (void)jf_animationStrokeRoundLineFromAngle:(CGFloat)from
+                                   lineWidth:(CGFloat)width
+                           animationDuration:(NSTimeInterval)duration
+{
+    CGFloat radius = MAX((CGRectGetWidth(self.bounds) - width) * 0.5, 0);
+    CGPoint center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
+                                                        radius:radius
+                                                    startAngle:from
+                                                      endAngle:2 * M_PI - M_PI_2
+                                                     clockwise:YES];
+
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.frame = self.bounds;
+    layer.strokeColor = UIColor.blackColor.CGColor;
+    layer.fillColor = UIColor.clearColor.CGColor;
+    layer.lineCap = kCALineCapSquare;
+    layer.path = path.CGPath;
+    layer.lineWidth = width;
+    layer.strokeStart = 0.0f;
+    layer.strokeEnd = 1.0f;
+    [self.layer addSublayer:layer];
+
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.duration = duration;
+    animation.fromValue = @(0);
+    animation.toValue = @(1.0f);
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [layer addAnimation:animation forKey:@"jf_strokeRound"];
+}
+
+- (void)jf_removeLayerAnimations
+{
+    [self.layer removeAllAnimations];
 }
 @end

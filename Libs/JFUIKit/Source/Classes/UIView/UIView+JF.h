@@ -35,5 +35,6 @@
 #import "UIView+JFTopToast.h"
 #import "UIView+JFDraw.h"
 #import "UIView+JFExtension.h"
+#import "UIView+JFGestureMove.h"
 
 #endif /* UIView_JF_h */

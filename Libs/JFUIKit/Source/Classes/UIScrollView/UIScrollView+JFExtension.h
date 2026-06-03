@@ -29,4 +29,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (JFExtension)
+
+@property (nonatomic, assign, readonly) BOOL jf_isBouncing;
+@property (nonatomic, assign, readonly) BOOL jf_isBouncingTop;
+@property (nonatomic, assign, readonly) BOOL jf_isBouncingLeading;
+@property (nonatomic, assign, readonly) BOOL jf_isBouncingBottom;
+@property (nonatomic, assign, readonly) BOOL jf_isBouncingTrailing;
 @end

@@ -32,6 +32,7 @@
 
 static NSString *const kProgressLayerKey = @"kProgressLayerKey";
 static NSString *const kShapeLayerKey    = @"kShapeLayerKey";
+static NSString *const kJFBorderLayerName = @"JFBorderLayer";
 
 @implementation UIView (JFDraw)
 
@@ -202,6 +203,106 @@ static NSString *const kShapeLayerKey    = @"kShapeLayerKey";
     [shape setPath:rounded.CGPath];
 
     self.layer.mask = shape;
+}
+
+- (void)jf_addRoundCornersWithTopLeading:(CGFloat)topLeading
+                             topTrailing:(CGFloat)topTrailing
+                           bottomLeading:(CGFloat)bottomLeading
+                          bottomTrailing:(CGFloat)bottomTrailing
+{
+    [self.superview layoutIfNeeded];
+    if (CGRectIsEmpty(self.bounds)) {
+        return;
+    }
+
+    CGFloat minX = CGRectGetMinX(self.bounds);
+    CGFloat minY = CGRectGetMinY(self.bounds);
+    CGFloat maxX = CGRectGetMaxX(self.bounds);
+    CGFloat maxY = CGRectGetMaxY(self.bounds);
+
+    UIBezierPath *path = [[UIBezierPath alloc] init];
+    [path moveToPoint:CGPointMake(minX + topLeading, minY)];
+    [path addLineToPoint:CGPointMake(maxX - topTrailing, minY)];
+    [path addArcWithCenter:CGPointMake(maxX - topTrailing, minY + topTrailing) radius:topTrailing startAngle:3 * M_PI_2 endAngle:0 clockwise:YES];
+    [path addLineToPoint:CGPointMake(maxX, maxY - bottomTrailing)];
+    [path addArcWithCenter:CGPointMake(maxX - bottomTrailing, maxY - bottomTrailing) radius:bottomTrailing startAngle:0 endAngle:M_PI_2 clockwise:YES];
+    [path addLineToPoint:CGPointMake(minX + bottomLeading, maxY)];
+    [path addArcWithCenter:CGPointMake(minX + bottomLeading, maxY - bottomLeading) radius:bottomLeading startAngle:M_PI_2 endAngle:M_PI clockwise:YES];
+    [path addLineToPoint:CGPointMake(minX, minY + topLeading)];
+    [path addArcWithCenter:CGPointMake(minX + topLeading, minY + topLeading) radius:topLeading startAngle:M_PI endAngle:3 * M_PI_2 clockwise:YES];
+    [path closePath];
+
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = path.CGPath;
+    self.layer.mask = shapeLayer;
+}
+
+- (void)jf_addBorderOnMaskLayer:(UIColor *)color width:(CGFloat)width
+{
+    if (!self.layer.mask || CGRectIsEmpty(self.bounds)) {
+        return;
+    }
+
+    CAShapeLayer *maskLayer = (CAShapeLayer *)self.layer.mask;
+    CAShapeLayer *borderLayer = [CAShapeLayer layer];
+    borderLayer.path = maskLayer.path;
+    borderLayer.strokeColor = color.CGColor;
+    borderLayer.fillColor = UIColor.clearColor.CGColor;
+    borderLayer.lineWidth = width;
+    borderLayer.frame = self.bounds;
+    [borderLayer setValue:kJFBorderLayerName forKey:kJFBorderLayerName];
+    [self.layer addSublayer:borderLayer];
+}
+
+- (void)jf_removeBorderOnMaskLayer
+{
+    for (CALayer *layer in self.layer.sublayers.reverseObjectEnumerator) {
+        if ([layer isKindOfClass:CAShapeLayer.class] && [[layer valueForKey:kJFBorderLayerName] isEqualToString:kJFBorderLayerName]) {
+            [layer removeFromSuperlayer];
+        }
+    }
+}
+
+- (void)jf_addGradientBorderOnMaskLayer:(NSArray *)colors width:(CGFloat)width isHorizontal:(BOOL)isHorizontal
+{
+    if (!self.layer.mask || CGRectIsEmpty(self.bounds)) {
+        return;
+    }
+
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.bounds;
+    gradientLayer.startPoint = isHorizontal ? CGPointMake(0, 0.5) : CGPointMake(0.5, 0);
+    gradientLayer.endPoint = isHorizontal ? CGPointMake(1, 0.5) : CGPointMake(0.5, 1);
+    gradientLayer.colors = colors;
+
+    CAShapeLayer *maskLayer = (CAShapeLayer *)self.layer.mask;
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = maskLayer.path;
+    shapeLayer.lineWidth = width;
+    shapeLayer.fillColor = UIColor.clearColor.CGColor;
+    shapeLayer.strokeColor = UIColor.whiteColor.CGColor;
+
+    gradientLayer.mask = shapeLayer;
+    [gradientLayer setValue:kJFBorderLayerName forKey:kJFBorderLayerName];
+    [self.layer addSublayer:gradientLayer];
+}
+
+- (void)jf_removeGradientBorderOnMaskLayer
+{
+    for (CALayer *layer in self.layer.sublayers.reverseObjectEnumerator) {
+        if ([layer isKindOfClass:CAGradientLayer.class] && [[layer valueForKey:kJFBorderLayerName] isEqualToString:kJFBorderLayerName]) {
+            [layer removeFromSuperlayer];
+        }
+    }
+}
+
+- (void)jf_removeGradientLayer
+{
+    for (CALayer *layer in self.layer.sublayers.reverseObjectEnumerator) {
+        if ([layer isKindOfClass:CAGradientLayer.class]) {
+            [layer removeFromSuperlayer];
+        }
+    }
 }
 
 - (void)jf_setGradientLayer:(UIColor *)startColor endColor:(UIColor *)endColor isHorizontal:(BOOL)isHorizontal {

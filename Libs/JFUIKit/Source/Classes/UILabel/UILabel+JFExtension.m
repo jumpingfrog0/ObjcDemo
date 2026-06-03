@@ -30,8 +30,49 @@
 #import <JFFoundation/NSMutableAttributedString+JF.h>
 
 @implementation UILabel (JFExtension)
++ (UILabel *)jf_labelWithTextColor:(UIColor *)textColor font:(UIFont *)font
+{
+    return [self jf_labelWithTextColor:textColor textAlignment:NSTextAlignmentLeft font:font];
+}
+
++ (UILabel *)jf_labelWithTextColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment font:(UIFont *)font
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.textColor = textColor;
+    label.textAlignment = textAlignment;
+    label.font = font;
+    label.backgroundColor = UIColor.clearColor;
+    return label;
+}
+
++ (UILabel *)jf_labelWithFrame:(CGRect)frame textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment font:(UIFont *)font
+{
+    UILabel *label = [self jf_labelWithTextColor:textColor textAlignment:textAlignment font:font];
+    label.frame = frame;
+    return label;
+}
+
+- (CGSize)jf_fittedSize
+{
+    CGSize constrainedSize = CGSizeMake(CGRectGetWidth(self.bounds), CGFLOAT_MAX);
+    if (constrainedSize.width <= 0) {
+        constrainedSize.width = CGFLOAT_MAX;
+    }
+    return [self.text boundingRectWithSize:constrainedSize
+                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                attributes:@{NSFontAttributeName: self.font ?: [UIFont systemFontOfSize:UIFont.systemFontSize]}
+                                   context:nil].size;
+}
+
+- (void)jf_clipToTextBounds
+{
+    CGRect frame = self.frame;
+    frame.size.width = ceil([self jf_fittedSize].width);
+    self.frame = frame;
+}
+
 - (void)jf_setTextColor:(UIColor *)color range:(NSRange)range {
-    if (!self.text) {
+    if (!self.text || range.location == NSNotFound || NSMaxRange(range) > self.text.length) {
         return;
     }
     NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:self.text];

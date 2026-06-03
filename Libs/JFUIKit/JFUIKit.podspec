@@ -34,8 +34,8 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
 
   s.frameworks = 'Foundation', 'UIKit'
   s.dependency 'JFFoundation', '~> 0.2.0'
-  s.default_subspecs = 'UIApplication', 'UIBarButtonItem', 'UIButton', 'UIColor', 'UIDevice', 'UIImage', 'UILabel',
-  	'UINavigationBar', 'UINavigationController', 'UINavigationItem', 'UIScrollView', 'UITextField', 'UIView', 'UIViewController'
+  s.default_subspecs = 'UIApplication', 'UIBarButtonItem', 'UIButton', 'UIColor', 'UICollectionViewCell', 'UIDevice', 'UIImage', 'UILabel',
+    'UINavigationBar', 'UINavigationController', 'UINavigationItem', 'UIScrollView', 'UITableViewCell', 'UITextField', 'UITextView', 'UIView', 'UIViewController'
 
   s.source_files = 'Source/Classes/JFUIKit.h'
   s.public_header_files = 'Source/Classes/JFUIKit.h'
@@ -56,6 +56,10 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
 
   s.subspec 'UIColor' do |ss|
   	ss.source_files = 'Source/Classes/UIColor/*.{h,m}'
+  end
+
+  s.subspec 'UICollectionViewCell' do |ss|
+    ss.source_files = 'Source/Classes/UICollectionViewCell/*.{h,m}'
   end
 
   s.subspec 'UIDevice' do |ss|
@@ -91,8 +95,16 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
   	ss.source_files = 'Source/Classes/UIScrollView/*.{h,m}'
   end
 
+  s.subspec 'UITableViewCell' do |ss|
+    ss.source_files = 'Source/Classes/UITableViewCell/*.{h,m}'
+  end
+
   s.subspec 'UITextField' do |ss|
   	ss.source_files = 'Source/Classes/UITextField/*.{h,m}'
+  end
+
+  s.subspec 'UITextView' do |ss|
+    ss.source_files = 'Source/Classes/UITextView/*.{h,m}'
   end
   
   s.subspec 'UIView' do |ss|
@@ -115,6 +127,11 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
 
 	ss.subspec 'UITabBar' do |sp|
       sp.source_files = 'Source/Classes/Hook/UITabBar/*.{h,m}'
+	end
+
+	ss.subspec 'UIImageViewDownloadCheck' do |sp|
+      sp.source_files = 'Source/Classes/Hook/UIImageViewDownloadCheck/*.{h,m}'
+	  sp.dependency 'SDWebImage'
 	end
   end
 

@@ -50,4 +50,18 @@ typedef NS_ENUM(NSInteger, JFTextFieldCharsType) {
         separator:(NSString *)separator;
 
 + (NSString *)jf_parseString:(NSString *)string separatorIndexs:(NSArray *)indexs separator:(NSString *)separator;
+
+/**
+ * 限制输入文本长度，存在高亮拼音时不截断
+ */
+- (void)jf_limitTextLengthTo:(NSInteger)maxLength;
+- (void)jf_limitTextLengthTo:(NSInteger)maxLength limitDo:(void (^)(void))doBlock;
+
+/**
+ * 在 shouldChangeCharactersInRange 中校验输入长度
+ */
++ (BOOL)jf_textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+   replacementString:(NSString *)string
+       maxLengthLimit:(NSUInteger)maxLength;
 @end

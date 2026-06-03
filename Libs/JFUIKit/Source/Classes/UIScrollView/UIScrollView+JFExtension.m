@@ -29,4 +29,30 @@
 #import "UIScrollView+JFExtension.h"
 
 @implementation UIScrollView (JFExtension)
+- (BOOL)jf_isBouncing
+{
+    return self.jf_isBouncingTop || self.jf_isBouncingLeading || self.jf_isBouncingBottom || self.jf_isBouncingTrailing;
+}
+
+- (BOOL)jf_isBouncingTop
+{
+    return self.contentOffset.y < -self.contentInset.top;
+}
+
+- (BOOL)jf_isBouncingLeading
+{
+    return self.contentOffset.x < -self.contentInset.left;
+}
+
+- (BOOL)jf_isBouncingBottom
+{
+    BOOL contentFillsScrollEdges = self.contentSize.height + self.contentInset.top + self.contentInset.bottom >= CGRectGetHeight(self.bounds);
+    return contentFillsScrollEdges && self.contentOffset.y > self.contentSize.height - CGRectGetHeight(self.bounds) + self.contentInset.bottom;
+}
+
+- (BOOL)jf_isBouncingTrailing
+{
+    BOOL contentFillsScrollEdges = self.contentSize.width + self.contentInset.left + self.contentInset.right >= CGRectGetWidth(self.bounds);
+    return contentFillsScrollEdges && self.contentOffset.x > self.contentSize.width - CGRectGetWidth(self.bounds) + self.contentInset.right;
+}
 @end

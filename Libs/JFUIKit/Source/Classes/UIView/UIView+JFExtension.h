@@ -50,4 +50,15 @@
  */
 + (UIWindow *)jf_getCurrentWindow;
 
+/**
+ * 暂停/恢复当前 view 的 layer 动画
+ */
+- (void)jf_pauseLayer;
+- (void)jf_resumeLayer;
+
+/**
+ * 创建向上漂浮的随机路径动画
+ */
++ (CAKeyframeAnimation *)jf_createFloatingAnimationInFrame:(CGRect)frame;
+
 @end

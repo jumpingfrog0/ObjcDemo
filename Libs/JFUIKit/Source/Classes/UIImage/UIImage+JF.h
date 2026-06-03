@@ -39,5 +39,6 @@
 #import "UIImage+JFBase64.h"
 #import "UIImage+JFUIKit.h"
 #import "UIImage+JFExtension.h"
+#import "UIImage+JFCheckName.h"
 
 #endif /* UIImage_JF_h */

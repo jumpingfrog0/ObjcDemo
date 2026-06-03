@@ -33,6 +33,7 @@
 #import "UIBarButtonItem+JF.h"
 #import "UIButton+JF.h"
 #import "UIColor+JF.h"
+#import "UICollectionViewCell+JF.h"
 #import "UIDevice+JF.h"
 #import "UIImage+JF.h"
 #import "UILabel+JF.h"
@@ -40,7 +41,9 @@
 #import "UINavigationController+JF.h"
 #import "UINavigationItem+JF.h"
 #import "UIScrollView+JF.h"
+#import "UITableViewCell+JF.h"
 #import "UITextField+JF.h"
+#import "UITextView+JF.h"
 #import "UIView+JF.h"
 #import "UIViewController+JF.h"
 

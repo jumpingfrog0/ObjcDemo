@@ -54,28 +54,51 @@
 - (void)show:(BOOL)animated {
     self.alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.alertWindow.rootViewController = [[UIViewController alloc] init];
-    
+
     id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
     // Applications that does not load with UIMainStoryboardFile might not have a window property
     if ([delegate respondsToSelector:@selector(window)]) {
         // we inherit the main window's tintColor
         self.alertWindow.tintColor = delegate.window.tintColor;
     }
-    
+
     // window level is above the top window (this makes the alert, if it's a sheet, show over the keyboard)
     UIWindow *topWindow = [UIApplication sharedApplication].windows.lastObject;
     self.alertWindow.windowLevel = topWindow.windowLevel + 1;
-    
+
     [self.alertWindow makeKeyAndVisible];
     [self.alertWindow.rootViewController presentViewController:self animated:animated completion:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    
+
     // precaution to ensure window gets destroyed
     // remove/hide the "key" window, the next visible window becomes "key"
     self.alertWindow.hidden = YES;
     self.alertWindow = nil;
+}
+
+- (void)jf_configMessageAlignment:(NSTextAlignment)alignment
+{
+    [self jf_configTextAlignmentWithView:self.view alignment:alignment text:self.message];
+}
+
+- (void)jf_configTextAlignmentWithView:(UIView *)view alignment:(NSTextAlignment)alignment text:(NSString *)text
+{
+    if (text.length == 0 || view.subviews.count == 0) {
+        return;
+    }
+
+    for (UIView *subview in view.subviews) {
+        [self jf_configTextAlignmentWithView:subview alignment:alignment text:text];
+        if ([subview isKindOfClass:UILabel.class]) {
+            UILabel *label = (UILabel *)subview;
+            if ([label.text isEqualToString:text]) {
+                label.textAlignment = alignment;
+                break;
+            }
+        }
+    }
 }
 @end

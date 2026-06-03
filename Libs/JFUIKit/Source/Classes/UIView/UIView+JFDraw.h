@@ -89,6 +89,18 @@
 - (void)jf_addRoundedCorners:(UIRectCorner)corners
                   withRadius:(CGFloat)radius;
 
+- (void)jf_addRoundCornersWithTopLeading:(CGFloat)topLeading
+                             topTrailing:(CGFloat)topTrailing
+                           bottomLeading:(CGFloat)bottomLeading
+                          bottomTrailing:(CGFloat)bottomTrailing;
+
+- (void)jf_addBorderOnMaskLayer:(UIColor *)color width:(CGFloat)width;
+- (void)jf_removeBorderOnMaskLayer;
+
+- (void)jf_addGradientBorderOnMaskLayer:(NSArray *)colors width:(CGFloat)width isHorizontal:(BOOL)isHorizontal;
+- (void)jf_removeGradientBorderOnMaskLayer;
+- (void)jf_removeGradientLayer;
+
 - (void)jf_setGradientLayer:(UIColor *)startColor endColor:(UIColor *)endColor isHorizontal:(BOOL)isHorizontal;
 - (void)jf_setGradientLayer:(UIColor *)startColor endColor:(UIColor *)endColor rect:(CGRect)rect isHorizontal:(BOOL)isHorizontal;
 @end
