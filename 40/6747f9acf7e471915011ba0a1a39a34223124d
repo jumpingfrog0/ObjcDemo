@@ -1,0 +1,96 @@
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFExtension.h
+  s_ea68df60aa64e6::t_0009acf96323be 32-37
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFDraw.m
+  s_ea68df60aa64e6::t_bbf4b1b08169bc 35,206-305
+Libs/JFUIKit/Source/Classes/UITableViewCell/UITableViewCell+JF.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-13
+Libs/JFUIKit/Source/Classes/JFUIKit.h
+  s_ea68df60aa64e6::t_6789b0e52e0336 36,44,46
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFGestureMove.h
+  s_ea68df60aa64e6::t_18ae85cd932643 1-23
+Libs/JFUIKit/Source/Classes/UICollectionViewCell/UICollectionViewCell+JF.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-13
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCheckName.m
+  s_ea68df60aa64e6::t_251780a2a01e81 1-34
+Libs/JFUIKit/Source/Classes/UIView/UIView+JF.h
+  s_ea68df60aa64e6::t_18ae85cd932643 38
+Libs/JFUIKit/Source/Classes/Hook/UIImageViewDownloadCheck/UIImageView+JFDownloadCheck.h
+  s_ea68df60aa64e6::t_49bb283f6c05c9 1-23
+Libs/JFUIKit/Source/Classes/UITableViewCell/UITableViewCell+JFExtension.m
+  s_ea68df60aa64e6::t_930f69527c5258 1-46
+Libs/JFUIKit/Source/Classes/UIButton/UIButton+JFExtension.m
+  s_ea68df60aa64e6::t_d177c910b8e587 30,33-37,78-154
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFExtension.m
+  s_ea68df60aa64e6::t_34a9da7510a340 122-145,147-154,156-169
+  s_ea68df60aa64e6::t_881e81e8e4efd5 97,101,146,155
+Libs/JFUIKit/Source/Classes/UITextView/UITextView+JFExtension.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-20
+Libs/JFUIKit/Source/Classes/UIAlertController/UIAlertController+JFExtension.h
+  s_ea68df60aa64e6::t_a553f8d5d36feb 34-38
+Libs/JFUIKit/Source/Classes/UITextField/UITextField+JFExtension.h
+  s_ea68df60aa64e6::t_08ebb315985fed 53-66
+Libs/JFUIKit/Source/Classes/UIDevice/UIDevice+JFInfo.m
+  s_ea68df60aa64e6::t_881e81e8e4efd5 205
+  s_ea68df60aa64e6::t_1d8facd64fa901 177-204,206-209,277-288,290-315
+Libs/JFUIKit/Source/Classes/UICollectionViewCell/UICollectionViewCell+JFExtension.m
+  s_ea68df60aa64e6::t_930f69527c5258 1-17
+Libs/JFUIKit/Source/Classes/UIAlertController/UIAlertController+JFExtension.m
+  s_ea68df60aa64e6::t_881e81e8e4efd5 57,64,68,75,92
+  s_ea68df60aa64e6::t_deadad2d81f71d 81-91,93-102
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JFCheckName.h
+  s_ea68df60aa64e6::t_251780a2a01e81 1-17
+Libs/JFUIKit/Source/Classes/Hook/UIImageViewDownloadCheck/UIImageView+JFDownloadCheck.m
+  s_ea68df60aa64e6::t_49bb283f6c05c9 1-9,11-57
+  s_ea68df60aa64e6::t_a9a8cdc0211260 10
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFExtension.h
+  s_ea68df60aa64e6::t_e166bdbaf34f79 53-63
+Libs/JFUIKit/JFUIKit.podspec
+  s_ea68df60aa64e6::t_61dedddca5626e 37,61,63-64,96-98,105-106,108,130-134
+  s_ea68df60aa64e6::t_599e61eee77a68 38,62,99,107
+Libs/JFUIKit/Source/Classes/UITextView/UITextView+JFExtension.m
+  s_ea68df60aa64e6::t_930f69527c5258 1-42
+Libs/JFUIKit/Source/Classes/UITextView/UITextView+JF.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-13
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFGestureMove.m
+  s_ea68df60aa64e6::t_18ae85cd932643 1-105
+Libs/JFUIKit/Source/Classes/UIScrollView/UIScrollView+JFExtension.m
+  s_ea68df60aa64e6::t_b44f975bdb612d 32-57
+Libs/JFUIKit/Source/Classes/UITextField/UITextField+JFExtension.m
+  s_ea68df60aa64e6::t_dcc5d05c79b295 182-217
+Libs/JFUIKit/Source/Classes/UICollectionViewCell/UICollectionViewCell+JFExtension.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-21
+Libs/JFUIKit/Source/Classes/UITableViewCell/UITableViewCell+JFExtension.h
+  s_ea68df60aa64e6::t_930f69527c5258 1-26
+Libs/JFUIKit/Source/Classes/UILabel/UILabel+JFExtension.h
+  s_ea68df60aa64e6::t_7ade28eff5301a 33-39
+Libs/JFUIKit/Source/Classes/UIImage/UIImage+JF.h
+  s_ea68df60aa64e6::t_251780a2a01e81 42
+Libs/JFUIKit/Source/Classes/UIView/UIView+JFDraw.h
+  s_ea68df60aa64e6::t_f4b99ebdedbc90 92-103
+Libs/JFUIKit/Source/Classes/UIButton/UIButton+JFExtension.h
+  s_ea68df60aa64e6::t_b7062183129667 57-83
+Libs/JFUIKit/Source/Classes/UILabel/UILabel+JFExtension.m
+  s_ea68df60aa64e6::t_e5f65c5049dae7 33-73,75
+Libs/JFUIKit/Source/Classes/UIDevice/UIDevice+JFInfo.h
+  s_ea68df60aa64e6::t_9b326093cf2622 75-79,123-134
+Libs/JFUIKit/Source/Classes/Hook/UITabBar/UITabBar+JFSwizzling.m
+  s_ea68df60aa64e6::t_da63ad7060f4dc 57-59,61-64,66-68
+  s_ea68df60aa64e6::t_881e81e8e4efd5 60,65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.12",
+  "base_commit_sha": "406747f9acf7e471915011ba0a1a39a34223124d",
+  "prompts": {},
+  "logical_commit_id": "406747f9acf7e471915011ba0a1a39a34223124d",
+  "sessions": {
+    "s_ea68df60aa64e6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e8443-61c9-7830-a7bc-9c8ded709af9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
