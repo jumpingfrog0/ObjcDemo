@@ -29,6 +29,7 @@
 #ifndef JFUIKit_h
 #define JFUIKit_h
 
+#import "UIAlertController+JF.h"
 #import "UIApplication+JF.h"
 #import "UIBarButtonItem+JF.h"
 #import "UIButton+JF.h"

@@ -36,6 +36,7 @@ def jf_libs()
   pod 'JFFoundation', :path => './Libs/JFFoundation'
   
   pod 'JFUIKit', :path => './Libs/JFUIKit'
+  pod 'JFUIKit/Hook/UIImageViewDownloadCheck', :path => './Libs/JFUIKit'
   
 end
 

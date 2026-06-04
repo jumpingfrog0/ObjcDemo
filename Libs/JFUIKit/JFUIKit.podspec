@@ -34,11 +34,15 @@ Cocoa Touch UIKit framework categories wrote in Objective-C.
 
   s.frameworks = 'Foundation', 'UIKit'
   s.dependency 'JFFoundation', '~> 0.2.0'
-  s.default_subspecs = 'UIApplication', 'UIBarButtonItem', 'UIButton', 'UIColor', 'UICollectionViewCell', 'UIDevice', 'UIImage', 'UILabel',
+  s.default_subspecs = 'UIAlertController', 'UIApplication', 'UIBarButtonItem', 'UIButton', 'UIColor', 'UICollectionViewCell', 'UIDevice', 'UIImage', 'UILabel',
     'UINavigationBar', 'UINavigationController', 'UINavigationItem', 'UIScrollView', 'UITableViewCell', 'UITextField', 'UITextView', 'UIView', 'UIViewController'
 
   s.source_files = 'Source/Classes/JFUIKit.h'
   s.public_header_files = 'Source/Classes/JFUIKit.h'
+
+  s.subspec 'UIAlertController' do |ss|
+    ss.source_files = 'Source/Classes/UIAlertController/*.{h,m}'
+  end
 
   s.subspec 'UIApplication' do |ss|
   	ss.source_files = 'Source/Classes/UIApplication/*.{h,m}'

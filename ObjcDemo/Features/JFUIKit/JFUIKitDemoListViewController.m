@@ -25,16 +25,23 @@
     self.title = @"JFUIKit";
     self.view.backgroundColor = [UIColor whiteColor];
     self.items = @[
+        @{@"title": @"UIAlertController", @"type": @"UIAlertController", @"detail": @"message 对齐、alert、action sheet"},
+        @{@"title": @"UIApplication", @"type": @"UIApplication", @"detail": @"目录、key window、顶层控制器"},
+        @{@"title": @"UIButton", @"type": @"UIButton", @"detail": @"图文布局、点击区域、描边动画"},
         @{@"title": @"UIColor", @"type": @"UIColor", @"detail": @"hex、alpha、色值读取、随机色"},
+        @{@"title": @"UICollectionViewCell", @"type": @"UICollectionViewCell", @"detail": @"reuseIdentifier 注册和复用"},
+        @{@"title": @"UIDevice", @"type": @"UIDevice", @"detail": @"型号、安全区、系统 UI 高度"},
         @{@"title": @"UIImage", @"type": @"UIImage", @"detail": @"生成、渐变、裁剪、圆角、滤镜、base64"},
+        @{@"title": @"UIImageView", @"type": @"UIImageView", @"detail": @"DownloadCheck 显式启用和失败日志"},
         @{@"title": @"UIView", @"type": @"UIView", @"detail": @"frame、线条、渐变、圆角、镂空、blur、截图"},
         @{@"title": @"UILabel", @"type": @"UILabel", @"detail": @"局部颜色、关键词、行距、删除线"},
-        @{@"title": @"UIButton", @"type": @"UIButton", @"detail": @"图文布局、局部文字颜色"},
-        @{@"title": @"UITextField", @"type": @"UITextField", @"detail": @"placeholder 颜色、输入过滤和格式化"},
-        @{@"title": @"UIScrollView", @"type": @"UIScrollView", @"detail": @"滚动到顶部"},
+        @{@"title": @"UIScrollView", @"type": @"UIScrollView", @"detail": @"滚动到顶部、bounce 状态"},
+        @{@"title": @"UITabBar", @"type": @"UITabBar", @"detail": @"凸出中心按钮 hitTest"},
+        @{@"title": @"UITableViewCell", @"type": @"UITableViewCell", @"detail": @"reuseIdentifier、分组圆角"},
+        @{@"title": @"UITextField", @"type": @"UITextField", @"detail": @"placeholder、长度限制、输入过滤"},
+        @{@"title": @"UITextView", @"type": @"UITextView", @"detail": @"长度限制、超长回调"},
         @{@"title": @"Navigation / BarButton", @"type": @"Navigation", @"detail": @"titleView、bar button、badge、导航栏背景"},
         @{@"title": @"Alert / Toast", @"type": @"AlertToast", @"detail": @"弹窗和顶部 toast"},
-        @{@"title": @"UIApplication / UIDevice", @"type": @"AppDevice", @"detail": @"安全目录、版本、设备信息"},
     ];
 
     [self setupTableView];
