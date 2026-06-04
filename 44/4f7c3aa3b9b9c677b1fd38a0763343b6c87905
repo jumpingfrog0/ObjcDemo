@@ -1,0 +1,33 @@
+ObjcDemo/Features/JFUIKit/JFUIKitDemoViewController.m
+  s_ea68df60aa64e6::t_962b7a7a71daab 11-18,38,44-46,48-54
+  s_ea68df60aa64e6::t_03fd2e9b207a08 311-314,352-396,433-449,474-501,519-528,545-549
+  s_ea68df60aa64e6::t_e1190a3eb00d1f 788-984
+  s_ea68df60aa64e6::t_21549817aae879 47,602
+  s_ea68df60aa64e6::t_e03c5e5ae77971 552-593,595-601,603-697
+  s_ea68df60aa64e6::t_fabb4a2045f7a9 97-106,136-142,144-147,150-151,158-159,162-165,171
+Libs/JFUIKit/Source/Classes/JFUIKit.h
+  s_ea68df60aa64e6::t_017332916a251a 32
+Libs/JFUIKit/JFUIKit.podspec
+  s_ea68df60aa64e6::t_6c6906e481db5d 37,42-45
+ObjcDemo/Features/JFUIKit/JFUIKitDemoListViewController.m
+  s_ea68df60aa64e6::t_8487ee5d4bcd1d 28-30,32-33,35,38-42
+Podfile
+  s_ea68df60aa64e6::t_d35d4693caf28e 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "444f7c3aa3b9b9c677b1fd38a0763343b6c87905",
+  "prompts": {},
+  "logical_commit_id": "444f7c3aa3b9b9c677b1fd38a0763343b6c87905",
+  "sessions": {
+    "s_ea68df60aa64e6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e8443-61c9-7830-a7bc-9c8ded709af9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "huangdonghong3 <huangdonghong@bigo.sg>"
+    }
+  }
+}
